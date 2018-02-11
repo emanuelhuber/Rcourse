@@ -8,30 +8,44 @@ title: Rstudio
 </p>-->
 
 
-
-![optional caption text](img/00_environment.png)
-
-
+## RStudio environment
+![RStudio overview](img/00_environment.png)
 
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+## History
+![optional caption text](img/01_history.png)
 
-There are currently two themes built on Poole:
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+## Help
+![optional caption text](img/03_help.png)
 
-Learn more and contribute on [GitHub](https://github.com/poole).
 
-## Setup
+## Plot
+![optional caption text](img/04_plot.png)
 
-Some fun facts about the setup of this project include:
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+## Get working directory `getwd()`
+![optional caption text](img/05_getwd.png)
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
 
-Thanks for reading!
+## Set working directory `setwd()`
+![optional caption text](img/05_setwd.png)
+![optional caption text](img/06_setwd_2.png)
+
+
+## Install package
+![optional caption text](img/07_install_package.png)
+![optional caption text](img/08_install_package.png)
+![optional caption text](img/09_install_package.png)
+
+
+## Create a script file
+![optional caption text](img/10_newFile.png)
+![optional caption text](img/11_newFile.png)
+
+## Run the code
+![optional caption text](img/12_run.png)
+![optional caption text](img/13_run.png)
+
+
+
