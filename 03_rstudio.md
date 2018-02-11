@@ -87,17 +87,20 @@ You can also set the working directory through the menu interface of RStudio (se
 R packages are collections of functions and data sets. The official R repository for package is the
 [Comprehensive R Archive Network](https://cran.r-project.org/) (check the link "Packages", about 12133 available packages).
 
-Packages can be installed either by typing in the console
+Packages can be installed by typing in the console
 ```r
 install.packages(c("RConics", "plot3D"))
 ```
+where `c("RConics", "plot3D")` is the vector of packages you want to install.
+
 ![optional caption text](img/09_install_package.png)
 
 Alternatively, you can install a package through the menu interface of RStudio (see below):
 ![optional caption text](img/07_install_package.png)
 ![optional caption text](img/08_install_package.png)
 
-Once a package is installed, you can load it in your current session using the function `library()`:
+Once a package is installed, you need to load it in your current session to use it.
+Load the packages `RConics` and `plot3D` with the function `library()`:
 ```r
 library("RConics")
 library("plot3D")

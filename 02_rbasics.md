@@ -18,7 +18,7 @@ date: 2018-02-05
 * [R Cran reference card for intermediate users](https://cran.r-project.org/doc/contrib/Short-refcard.pdf)
  
 
-## Some good online book to learn R
+## Some good online books to learn R
 
 * [Introduction to R](http://colinfay.me/intro-to-r/)
 * [R for data science](https://bookdown.org/rdpeng/rprogdatascience)
@@ -28,11 +28,11 @@ date: 2018-02-05
 <p class="message">It is very helpful to use the R-documentation</p>
 
 Check the documentation to know how to use a specific function:
-```
+```r
 ?mean
 ```
 Search the help files for a word or phrase. 
-```
+```r
 help.search("weighted mean")
 ```
-</p>
+
