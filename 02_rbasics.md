@@ -6,7 +6,7 @@ date: 2018-02-05
 
 
 <p class="message">
-**Objective:** learn some R basics
+<strong>Objective:</strong> learn some R basics.
 </p>
 
 ## Online interactive course

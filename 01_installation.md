@@ -4,6 +4,9 @@ title: Installation
 date: 2018-02-06
 ---
 
+<p class="message">
+<strong>Objective:</strong> install R and RStudio.
+</p>
 
 ## Install R
 
