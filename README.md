@@ -1,3 +1,8 @@
+---
+title: Homepage
+menus: header
+---
+
 # Rcourse
 
 ## R and RStudio installations (required)
