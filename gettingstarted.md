@@ -3,7 +3,7 @@ layout: page
 title: Getting started
 ---
 
-# Getting started
+# Gettingy started
 
 ## R and RStudio installations (required)
 
