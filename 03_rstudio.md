@@ -22,7 +22,7 @@ Check the [RStudio IDE cheat sheet](https://www.rstudio.com/wp-content/uploads/2
 ### Console
 
 Type for example
-```
+```r
 x <- c(3, 34, 12 40)
 ```
 in the console then press enter. You should got this result.
@@ -30,7 +30,7 @@ in the console then press enter. You should got this result.
 ![RStudio overview](img/00_environment_mod.png)
 
 To print the content of the variable `x`, type in the console
-```
+```r
 x
 ```
 then press enter.
@@ -50,7 +50,7 @@ then press enter.
 ## Setting your working directory
 
 To see what is your current working directory, type in the console
-```
+```r
 getwd()    # get working directory
 ```
 then press enter.
@@ -59,7 +59,7 @@ then press enter.
 
 
 To set another working directory, type in the console
-```
+```r
 setwd("YOUR_DIRECTORY")    # set working directory
 ```
 then press enter. The variable `"YOUR_DIRECTORY"` is either:
@@ -69,7 +69,7 @@ then press enter. The variable `"YOUR_DIRECTORY"` is either:
 
 **WARNING** You need to use the forward slash `/` as it is on Linux or Mac system. 
 Alternatively, you can use the function `file.path` to correctly construct/assemble the file path:
-```
+```r
 setwd(file.path("C:", "RCourse", "mysubfolder", "run"))
 ```
 
@@ -88,7 +88,7 @@ R packages are collections of functions and data sets. The official R repository
 [Comprehensive R Archive Network](https://cran.r-project.org/) (check the link "Packages", about 12133 available packages).
 
 Packages can be installed either by typing in the console
-```
+```r
 install.packages(c("RConics", "plot3D"))
 ```
 ![optional caption text](img/09_install_package.png)
@@ -98,7 +98,7 @@ Alternatively, you can install a package through the menu interface of RStudio (
 ![optional caption text](img/08_install_package.png)
 
 Once a package is installed, you can load it in your current session using the function `library()`:
-```
+```r
 library("RConics")
 library("plot3D")
 ```
