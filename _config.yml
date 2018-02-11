@@ -8,7 +8,7 @@ permalink:        pretty
 # Setup
 title:            R
 tagline:          "R Course"
-description:      'R Course.'
+description:      'Course.'
 url:              https://emanuelhuber.github.io/Rcourse/
 baseurl:          /Rcourse
 
