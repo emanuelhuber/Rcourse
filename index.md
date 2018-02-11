@@ -6,11 +6,12 @@ title: Home
 # R Course
 
 <p class="message">
-  A R course for AGU-people !!!
+  A gentle introduction to R and RStudio
 </p>
 
+## Content
 
-1. Install R, RStudio 
-2. Learn some R basics
-3. Discover RStudio
-4. Learn some advanced stuff...
+1. [Install R, RStudio](01_gettingstarted)
+2. [Learn some R basics](02_Rbasics)
+3. [Discover RStudio](02_rstudio)
+4. **Coming soon:** Learn some advanced stuff...
