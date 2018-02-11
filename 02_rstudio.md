@@ -41,7 +41,7 @@ title: Rstudio
 
 ## Create a script file
 ![optional caption text](img/10_newFile.png)
-![optional caption text](img/11_newFile.png)
+![optional caption text](img/11_newfile.png)
 
 ## Run the code
 ![optional caption text](img/12_run.png)

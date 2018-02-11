@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home2
+title: Home
 ---
 
 # R Course
