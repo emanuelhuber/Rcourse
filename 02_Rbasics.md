@@ -1,6 +1,7 @@
 ---
 layout: page
 title: R Basics
+date: 2018-02-05
 ---
 
 

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Rstudio
+date: 2018-02-07
 ---
 
 <!--<p class="message">
