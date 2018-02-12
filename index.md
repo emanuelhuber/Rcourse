@@ -16,5 +16,6 @@ title: Home
 3. [Learn to use RStudio](03_rstudio)
 
 
-
+<!--
 $$\forall x \in R$$
+-->

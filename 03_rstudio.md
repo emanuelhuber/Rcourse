@@ -17,9 +17,9 @@ date: 2018-02-07
 Check the [RStudio IDE cheat sheet](https://www.rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf)
 
 
-## RStudio environment
+## RStudio panes
 
-### Console
+### R console
 
 Type for example
 ```r
@@ -37,15 +37,15 @@ x
 ```
 then press enter.
 
-### History
+### History pane
 ![optional caption text](img/01_history_mod.png)
 
 
-### Help
+### Help pane
 ![optional caption text](img/03_help_mod.png)
 
 
-### Plot
+### Plot pane
 ![optional caption text](img/04_plot_mod.png)
 
 
@@ -116,14 +116,15 @@ Load the packages `RConics` and `plot3D` with the function `library()`:
 library("RConics")
 library("plot3D")
 ```
-
-## Creating a script file
+## Coding with RStudio
 Normally you organise your code in a script file and then run it into the R console
+
+### Creating a script file
 
 ![optional caption text](img/10_newFile.png)
 ![optional caption text](img/11_newfile_mod.png)
 
-## Runnin the code
+### Running the code
 * Either use the "run" button:
     ![optional caption text](img/12_run_mod.png)
 
