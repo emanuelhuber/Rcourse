@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Rstudio
-date: 2018-02-07
+date: 2018-02-12
 ---
 
 <!--<p class="message">
@@ -14,7 +14,7 @@ date: 2018-02-07
 </p>
 
 
-Check the [RStudio IDE cheat sheet](https://www.rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf)
+The [RStudio IDE cheat sheet](https://www.rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf) gives a very complete and detailed overview of RStudio. Have a look at it.
 
 
 ## RStudio panes
