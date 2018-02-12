@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Home
 date: 2018-02-12
 ---
