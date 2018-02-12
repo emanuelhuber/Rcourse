@@ -23,7 +23,7 @@ date: 2018-02-12
 * [Introduction to R](http://colinfay.me/intro-to-r/)
 * [R for data science](https://bookdown.org/rdpeng/rprogdatascience)
 
-## R documentation
+## R documentation/help
 
 <p class="message">It is very helpful to use the R-documentation</p>
 
@@ -36,3 +36,8 @@ Search the help files for a word or phrase.
 help.search("weighted mean")
 ```
 
+Ask your friend google... he will take care of you (and your data)!
+```
+R Cran weighted mean
+```
+I always write `R Cran` instead of `R` alone because it works better.
