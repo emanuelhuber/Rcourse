@@ -84,10 +84,19 @@ You can also set the working directory through the menu interface of RStudio (se
 ![optional caption text](img/06_setwd_2.png)
 
 
-## Install package
+## Installing packages
+
 
 R packages are collections of functions and data sets. The official R repository for package is the
-[Comprehensive R Archive Network](https://cran.r-project.org/) (check the link "Packages", about 12133 available packages).
+[Comprehensive R Archive Network](https://cran.r-project.org/). You can:
+- browse [all the 12133 available packages](https://cran.r-project.org/web/packages/available_packages_by_name.html) by name
+- or browse packages by topic, see [CRAN task views](https://cran.r-project.org/web/views/)
+
+Have a look at the documentation of the package `RConics`:
+1. go to [https://cran.rstudio.com/web/packages/RConics/index.html](https://cran.rstudio.com/web/packages/RConics/index.html)
+2. click on the link to the "reference manual" [RConics.pdf](https://cran.rstudio.com/web/packages/RConics/RConics.pdf)
+Each function is documented (the function documentation is identical to the documentation displayed in the help panel in RStudio.
+
 
 Packages can be installed by typing in the console
 ```r
