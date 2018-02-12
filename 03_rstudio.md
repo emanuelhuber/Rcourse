@@ -117,11 +117,13 @@ library("RConics")
 library("plot3D")
 ```
 
-## Create a script file
+## Creating a script file
+Normally you organise your code in a script file and then run it into the R console
+
 ![optional caption text](img/10_newFile.png)
 ![optional caption text](img/11_newfile_mod.png)
 
-## Run the code
+## Runnin the code
 * Either use the "run" button:
     ![optional caption text](img/12_run_mod.png)
 
