@@ -25,9 +25,11 @@ Type for example
 ```r
 x <- c(3, 34, 12 40)
 ```
-in the console then press enter. You should got this result.
+in the console then press enter. You should get this result.
 
 ![RStudio overview](img/00_environment_mod.png)
+
+The "Environment" panel on the top right side shows all the variables already used.
 
 To print the content of the variable `x`, type in the console
 ```r
