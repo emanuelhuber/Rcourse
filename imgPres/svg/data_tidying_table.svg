@@ -22,7 +22,7 @@
    inkscape:export-ydpi="150"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6"><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath18"><path
@@ -70,13 +70,13 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="0.84099349"
-     inkscape:cx="-175.51097"
-     inkscape:cy="-163.76109"
+     inkscape:zoom="1.1893444"
+     inkscape:cx="81.954267"
+     inkscape:cy="60.525324"
      inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" /><g
+     inkscape:current-layer="g10" /><g
      id="g10"
      inkscape:groupmode="layer"
      inkscape:label="data_tidying_table01"
@@ -120,39 +120,47 @@
          d="M 56.7,575 H 346" /><g
          id="g78"><text
            id="text82"
-           style="font-variant:normal;font-weight:bold;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,98,753.8)"><tspan
+           style="font-variant:normal;font-weight:bold;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans-Bold;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,98,753.8)"
+           x="30.9375"
+           y="0"><tspan
              id="tspan80"
              sodipodi:role="line"
-             y="0"
-             x="0 7 12.7 16.799999 23.09">Datum</tspan></text>
+             x="30.9375"
+             y="0">date</tspan></text>
 </g><g
          id="g84"><text
            id="text88"
-           style="font-variant:normal;font-weight:bold;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,148.1,753.8)"><tspan
+           style="font-variant:normal;font-weight:bold;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans-Bold;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,148.1,753.8)"
+           x="53.496094"
+           y="0"><tspan
              id="tspan86"
              sodipodi:role="line"
-             y="0"
-             x="0 5.9899998 10.29 16.280001 22.370001 28.17 32.970001 37.07 42.869999 45.959999 49.049999">Probestelle</tspan></text>
+             x="53.496094"
+             y="0">location</tspan></text>
 </g><g
          id="g90"><text
            id="text94"
-           style="font-variant:normal;font-weight:bold;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,221.6,753.8)"><tspan
+           style="font-variant:normal;font-weight:bold;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans-Bold;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,221.6,753.8)"
+           x="62.382812"
+           y="0"><tspan
              id="tspan92"
              sodipodi:role="line"
-             y="0"
-             x="0 6.1999998 13.79 22.889999 28.879999 36.470001 44.27 49.869999 57.669998">COMPONENT</tspan></text>
+             x="62.382812"
+             y="0">parameter</tspan></text>
 </g><g
          id="g96"><text
            id="text100"
-           style="font-variant:normal;font-weight:bold;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,314.6,753.8)"><tspan
+           style="font-variant:normal;font-weight:bold;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans-Bold;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,314.6,753.8)"
+           x="29.736328"
+           y="0"><tspan
              id="tspan98"
              sodipodi:role="line"
-             y="0"
-             x="0 5.8000002 12.29 17.59 24.780001">VALUE</tspan></text>
+             x="29.736328"
+             y="0">value</tspan></text>
 </g><g
          id="g102"><text
            id="text106"
@@ -165,21 +173,25 @@
 </g><g
          id="g108"><text
            id="text112"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,174.1,740.3)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,174.1,740.3)"
+           x="26.928711"
+           y="0"><tspan
              id="tspan110"
              sodipodi:role="line"
-             y="0"
-             x="0 5.8899999 12.89 18.18 21.57">RHEIN</tspan></text>
+             x="26.928711"
+             y="0">RHEIN</tspan></text>
 </g><g
          id="g114"><text
            id="text118"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,252.8,740.3)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,252.8,740.3)"
+           x="31.079102"
+           y="0"><tspan
              id="tspan116"
              sodipodi:role="line"
-             y="0"
-             x="0 5.3000002 11.19 14.48 17.07 22.959999 27.459999">abfluss</tspan></text>
+             x="31.079102"
+             y="0">abfluss</tspan></text>
 </g><g
          id="g120"><text
            id="text124"
@@ -201,21 +213,25 @@
 </g><g
          id="g132"><text
            id="text136"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,174.1,726.8)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,174.1,726.8)"
+           x="26.928711"
+           y="0"><tspan
              id="tspan134"
              sodipodi:role="line"
-             y="0"
-             x="0 5.8899999 12.89 18.18 21.57">RHEIN</tspan></text>
+             x="26.928711"
+             y="0">RHEIN</tspan></text>
 </g><g
          id="g138"><text
            id="text142"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,260.3,726.8)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,260.3,726.8)"
+           x="23.442383"
+           y="0"><tspan
              id="tspan140"
              sodipodi:role="line"
-             y="0"
-             x="0 5.8899999 8.4799995 11.87 15.77 21.07">nitrat</tspan></text>
+             x="23.442383"
+             y="0">nitrat</tspan></text>
 </g><g
          id="g144"><text
            id="text148"
@@ -237,21 +253,25 @@
 </g><g
          id="g156"><text
            id="text160"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,175,713.3)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,175,713.3)"
+           x="27.294922"
+           y="0"><tspan
              id="tspan158"
              sodipodi:role="line"
-             y="0"
-             x="0 8.8000002 12.19 17.48 22.67">WIESE</tspan></text>
+             x="27.294922"
+             y="0">WIESE</tspan></text>
 </g><g
          id="g162"><text
            id="text166"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,252.8,713.3)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,252.8,713.3)"
+           x="31.079102"
+           y="0"><tspan
              id="tspan164"
              sodipodi:role="line"
-             y="0"
-             x="0 5.3000002 11.19 14.48 17.07 22.959999 27.459999">abfluss</tspan></text>
+             x="31.079102"
+             y="0">abfluss</tspan></text>
 </g><g
          id="g168"><text
            id="text172"
@@ -273,21 +293,25 @@
 </g><g
          id="g180"><text
            id="text184"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,175,699.8)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,175,699.8)"
+           x="27.294922"
+           y="0"><tspan
              id="tspan182"
              sodipodi:role="line"
-             y="0"
-             x="0 8.8000002 12.19 17.48 22.67">WIESE</tspan></text>
+             x="27.294922"
+             y="0">WIESE</tspan></text>
 </g><g
          id="g186"><text
            id="text190"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,260.3,699.8)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,260.3,699.8)"
+           x="23.442383"
+           y="0"><tspan
              id="tspan188"
              sodipodi:role="line"
-             y="0"
-             x="0 5.8899999 8.4799995 11.87 15.77 21.07">nitrat</tspan></text>
+             x="23.442383"
+             y="0">nitrat</tspan></text>
 </g><g
          id="g192"><text
            id="text196"
@@ -309,21 +333,25 @@
 </g><g
          id="g204"><text
            id="text208"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,175,686.3)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,175,686.3)"
+           x="27.294922"
+           y="0"><tspan
              id="tspan206"
              sodipodi:role="line"
-             y="0"
-             x="0 8.8000002 12.19 17.48 22.67">WIESE</tspan></text>
+             x="27.294922"
+             y="0">WIESE</tspan></text>
 </g><g
          id="g210"><text
            id="text214"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,259.8,686.3)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,259.8,686.3)"
+           x="24.379883"
+           y="0"><tspan
              id="tspan212"
              sodipodi:role="line"
-             y="0"
-             x="0 4.5 10.39 12.98 16.27 21.57">sulfat</tspan></text>
+             x="24.379883"
+             y="0">sulfat</tspan></text>
 </g><g
          id="g216"><text
            id="text220"
@@ -344,21 +372,25 @@
 </g><g
          id="g228"><text
            id="text232"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,175,672.8)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,175,672.8)"
+           x="27.294922"
+           y="0"><tspan
              id="tspan230"
              sodipodi:role="line"
-             y="0"
-             x="0 8.8000002 12.19 17.48 22.67">WIESE</tspan></text>
+             x="27.294922"
+             y="0">WIESE</tspan></text>
 </g><g
          id="g234"><text
            id="text238"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,251.6,672.8)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,251.6,672.8)"
+           x="31.347656"
+           y="0"><tspan
              id="tspan236"
              sodipodi:role="line"
-             y="0"
-             x="0 5.8899999 9.8800001 15.67 24.66 27.25">bromid</tspan></text>
+             x="31.347656"
+             y="0">bromid</tspan></text>
 </g><g
          id="g240"><text
            id="text244"
@@ -380,21 +412,25 @@
 </g><g
          id="g252"><text
            id="text256"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,177.1,659.3)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,177.1,659.3)"
+           x="24.311523"
+           y="0"><tspan
              id="tspan254"
              sodipodi:role="line"
-             y="0"
-             x="0 6.0999999 9.4899998 15.38 20.57">BIRSE</tspan></text>
+             x="24.311523"
+             y="0">BIRSE</tspan></text>
 </g><g
          id="g258"><text
            id="text262"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,252.8,659.3)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,252.8,659.3)"
+           x="31.079102"
+           y="0"><tspan
              id="tspan260"
              sodipodi:role="line"
-             y="0"
-             x="0 5.3000002 11.19 14.48 17.07 22.959999 27.459999">abfluss</tspan></text>
+             x="31.079102"
+             y="0">abfluss</tspan></text>
 </g><g
          id="g264"><text
            id="text268"
@@ -416,21 +452,25 @@
 </g><g
          id="g276"><text
            id="text280"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,177.1,645.8)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,177.1,645.8)"
+           x="24.311523"
+           y="0"><tspan
              id="tspan278"
              sodipodi:role="line"
-             y="0"
-             x="0 6.0999999 9.4899998 15.38 20.57">BIRSE</tspan></text>
+             x="24.311523"
+             y="0">BIRSE</tspan></text>
 </g><g
          id="g282"><text
            id="text286"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,260.3,645.8)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,260.3,645.8)"
+           x="23.442383"
+           y="0"><tspan
              id="tspan284"
              sodipodi:role="line"
-             y="0"
-             x="0 5.8899999 8.4799995 11.87 15.77 21.07">nitrat</tspan></text>
+             x="23.442383"
+             y="0">nitrat</tspan></text>
 </g><g
          id="g288"><text
            id="text292"
@@ -452,21 +492,25 @@
 </g><g
          id="g300"><text
            id="text304"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,177.1,632.3)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,177.1,632.3)"
+           x="24.311523"
+           y="0"><tspan
              id="tspan302"
              sodipodi:role="line"
-             y="0"
-             x="0 6.0999999 9.4899998 15.38 20.57">BIRSE</tspan></text>
+             x="24.311523"
+             y="0">BIRSE</tspan></text>
 </g><g
          id="g306"><text
            id="text310"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,251.6,632.3)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,251.6,632.3)"
+           x="31.347656"
+           y="0"><tspan
              id="tspan308"
              sodipodi:role="line"
-             y="0"
-             x="0 5.8899999 9.8800001 15.67 24.66 27.25">bromid</tspan></text>
+             x="31.347656"
+             y="0">bromid</tspan></text>
 </g><g
          id="g312"><text
            id="text316"
@@ -487,21 +531,25 @@
 </g><g
          id="g324"><text
            id="text328"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,174.1,618.9)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,174.1,618.9)"
+           x="26.928711"
+           y="0"><tspan
              id="tspan326"
              sodipodi:role="line"
-             y="0"
-             x="0 5.8899999 12.89 18.18 21.57">RHEIN</tspan></text>
+             x="26.928711"
+             y="0">RHEIN</tspan></text>
 </g><g
          id="g330"><text
            id="text334"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,252.8,618.9)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,252.8,618.9)"
+           x="31.079102"
+           y="0"><tspan
              id="tspan332"
              sodipodi:role="line"
-             y="0"
-             x="0 5.3000002 11.19 14.48 17.07 22.959999 27.459999">abfluss</tspan></text>
+             x="31.079102"
+             y="0">abfluss</tspan></text>
 </g><g
          id="g336"><text
            id="text340"
@@ -523,21 +571,25 @@
 </g><g
          id="g348"><text
            id="text352"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,174.1,605.4)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,174.1,605.4)"
+           x="26.928711"
+           y="0"><tspan
              id="tspan350"
              sodipodi:role="line"
-             y="0"
-             x="0 5.8899999 12.89 18.18 21.57">RHEIN</tspan></text>
+             x="26.928711"
+             y="0">RHEIN</tspan></text>
 </g><g
          id="g354"><text
            id="text358"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,260.3,605.4)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,260.3,605.4)"
+           x="23.442383"
+           y="0"><tspan
              id="tspan356"
              sodipodi:role="line"
-             y="0"
-             x="0 5.8899999 8.4799995 11.87 15.77 21.07">nitrat</tspan></text>
+             x="23.442383"
+             y="0">nitrat</tspan></text>
 </g><g
          id="g360"><text
            id="text364"
@@ -559,21 +611,25 @@
 </g><g
          id="g372"><text
            id="text376"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,174.1,591.9)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,174.1,591.9)"
+           x="26.928711"
+           y="0"><tspan
              id="tspan374"
              sodipodi:role="line"
-             y="0"
-             x="0 5.8899999 12.89 18.18 21.57">RHEIN</tspan></text>
+             x="26.928711"
+             y="0">RHEIN</tspan></text>
 </g><g
          id="g378"><text
            id="text382"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,251.6,591.9)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,251.6,591.9)"
+           x="31.347656"
+           y="0"><tspan
              id="tspan380"
              sodipodi:role="line"
-             y="0"
-             x="0 5.8899999 9.8800001 15.67 24.66 27.25">bromid</tspan></text>
+             x="31.347656"
+             y="0">bromid</tspan></text>
 </g><g
          id="g384"><text
            id="text388"
@@ -595,21 +651,25 @@
 </g><g
          id="g396"><text
            id="text400"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,175,578.4)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,175,578.4)"
+           x="27.294922"
+           y="0"><tspan
              id="tspan398"
              sodipodi:role="line"
-             y="0"
-             x="0 8.8000002 12.19 17.48 22.67">WIESE</tspan></text>
+             x="27.294922"
+             y="0">WIESE</tspan></text>
 </g><g
          id="g402"><text
            id="text406"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,252.8,578.4)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,252.8,578.4)"
+           x="31.079102"
+           y="0"><tspan
              id="tspan404"
              sodipodi:role="line"
-             y="0"
-             x="0 5.3000002 11.19 14.48 17.07 22.959999 27.459999">abfluss</tspan></text>
+             x="31.079102"
+             y="0">abfluss</tspan></text>
 </g><g
          id="g408"><text
            id="text412"
@@ -624,7 +684,8 @@
      id="layer1"
      inkscape:label="tidy_data"
      style="display:inline"
-     transform="translate(-75.599998,-103.88193)"><g
+     transform="translate(-75.599998,-103.88193)"
+     sodipodi:insensitive="true"><g
        id="g1977"
        transform="translate(-6.6544609,-3.0727879)"><path
          inkscape:connector-curvature="0"
@@ -662,33 +723,29 @@
          id="g88-2"
          transform="matrix(1.3333333,0,0,-1.3333333,6.6544588,1125.5546)"><text
            id="text92-2"
-           style="font-variant:normal;font-weight:bold;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,87.1,754.5)"><tspan
+           style="font-variant:normal;font-weight:bold;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans-Bold;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,87.1,754.5)"
+           x="30.9375"
+           y="0"><tspan
              id="tspan90-8"
              sodipodi:role="line"
-             y="0"
-             x="0 7 12.7 16.799999 23.09">Datum</tspan></text>
+             x="30.9375"
+             y="0">date</tspan></text>
 </g><g
          id="g94-9"
          transform="matrix(1.3333333,0,0,-1.3333333,6.6544588,1125.5546)"><text
            id="text98-7"
-           style="font-variant:normal;font-weight:bold;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,142.7,754.5)"><tspan
+           style="font-variant:normal;font-weight:bold;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans-Bold;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,142.7,754.5)"
+           x="53.496094"
+           y="0"><tspan
              id="tspan96-3"
              sodipodi:role="line"
-             y="0"
-             x="0 5.9899998 10.29 16.280001 22.370001 28.17 32.970001 37.07 42.869999 45.959999 49.049999">Probestelle</tspan></text>
+             x="53.496094"
+             y="0">location</tspan></text>
 </g><g
          id="g100-6"
-         transform="matrix(1.3333333,0,0,-1.3333333,6.6544588,1125.5546)"><text
-           id="text104-1"
-           style="font-variant:normal;font-weight:bold;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,226.9,754.5)"><tspan
-             id="tspan102-2"
-             sodipodi:role="line"
-             y="0"
-             x="0 5.6999998 11.79 15.68 18.77 25.059999 29.860001">abfluss</tspan></text>
-</g><g
+         transform="matrix(1.3333333,0,0,-1.3333333,6.6544588,1125.5546)" /><g
          id="g106-9"
          transform="matrix(1.3333333,0,0,-1.3333333,6.6544588,1125.5546)"><text
            id="text110-3"
@@ -732,12 +789,14 @@
          id="g130-1"
          transform="matrix(1.3333333,0,0,-1.3333333,6.6544588,1125.5546)"><text
            id="text134-0"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,168.7,741.7)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,168.7,741.7)"
+           x="28.31543"
+           y="0"><tspan
              id="tspan132-6"
              sodipodi:role="line"
-             y="0"
-             x="0 5.8899999 12.89 18.18 21.57">RHEIN</tspan></text>
+             x="28.31543"
+             y="0">RIVER</tspan></text>
 </g><g
          id="g136-3"
          transform="matrix(1.3333333,0,0,-1.3333333,6.6544588,1125.5546)"><text
@@ -792,12 +851,14 @@
          id="g166-4"
          transform="matrix(1.3333333,0,0,-1.3333333,6.6544588,1125.5546)"><text
            id="text170-5"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,169.6,728.9)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,169.6,728.9)"
+           x="27.294922"
+           y="0"><tspan
              id="tspan168-2"
              sodipodi:role="line"
-             y="0"
-             x="0 8.8000002 12.19 17.48 22.67">WIESE</tspan></text>
+             x="27.294922"
+             y="0">GW_2</tspan></text>
 </g><g
          id="g172-5"
          transform="matrix(1.3333333,0,0,-1.3333333,6.6544588,1125.5546)"><text
@@ -851,12 +912,14 @@
          id="g202-4"
          transform="matrix(1.3333333,0,0,-1.3333333,6.6544588,1125.5546)"><text
            id="text206-9"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,171.7,716.1)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,171.7,716.1)"
+           x="24.311523"
+           y="0"><tspan
              id="tspan204-2"
              sodipodi:role="line"
-             y="0"
-             x="0 6.0999999 9.4899998 15.38 20.57">BIRSE</tspan></text>
+             x="24.311523"
+             y="0">GW_1</tspan></text>
 </g><g
          id="g208-0"
          transform="matrix(1.3333333,0,0,-1.3333333,6.6544588,1125.5546)"><text
@@ -910,12 +973,14 @@
          id="g238-7"
          transform="matrix(1.3333333,0,0,-1.3333333,6.6544588,1125.5546)"><text
            id="text242-2"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,168.7,703.4)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,168.7,703.4)"
+           x="26.928711"
+           y="0"><tspan
              id="tspan240-7"
              sodipodi:role="line"
-             y="0"
-             x="0 5.8899999 12.89 18.18 21.57">RHEIN</tspan></text>
+             x="26.928711"
+             y="0">RIVER</tspan></text>
 </g><g
          id="g244-2"
          transform="matrix(1.3333333,0,0,-1.3333333,6.6544588,1125.5546)"><text
@@ -970,12 +1035,14 @@
          id="g274-7"
          transform="matrix(1.3333333,0,0,-1.3333333,6.6544588,1125.5546)"><text
            id="text278-1"
-           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,169.6,690.6)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:10px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,169.6,690.6)"
+           x="27.294922"
+           y="0"><tspan
              id="tspan276-1"
              sodipodi:role="line"
-             y="0"
-             x="0 8.8000002 12.19 17.48 22.67">WIESE</tspan></text>
+             x="27.294922"
+             y="0">GW_1</tspan></text>
 </g><g
          id="g280-5"
          transform="matrix(1.3333333,0,0,-1.3333333,6.6544588,1125.5546)"><text
@@ -1016,4 +1083,14 @@
              sodipodi:role="line"
              y="0"
              x="0 7.29">NA</tspan></text>
-</g></g></g></svg>
+</g></g><text
+       y="116.48183"
+       x="347.60495"
+       id="text104-1"
+       style="font-variant:normal;font-weight:bold;font-size:13.33333302px;font-family:'Droid Sans';-inkscape-font-specification:DroidSans-Bold;text-align:end;writing-mode:lr-tb;text-anchor:end;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"><tspan
+         style="text-align:end;text-anchor:end;stroke-width:1.33333325"
+         id="tspan102-2"
+         sodipodi:role="line"
+         x="347.60495"
+         y="116.48183">head</tspan></text>
+</g></svg>
