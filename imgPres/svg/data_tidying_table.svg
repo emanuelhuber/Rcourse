@@ -12,17 +12,17 @@
    version="1.1"
    id="svg2"
    xml:space="preserve"
-   width="530.39996"
-   height="102.39999"
-   viewBox="0 0 530.39997 102.39999"
+   width="385.73334"
+   height="252"
+   viewBox="0 0 385.73334 252.00001"
    sodipodi:docname="data_tidying_table.svg"
    inkscape:version="0.92.2 (unknown)"
-   inkscape:export-filename="/media/data/huber/Documents/WORKNEW/RCOURSE/Rcourse/imgPres/data_tidying_table_tidy.png"
+   inkscape:export-filename="/media/data/huber/Documents/WORKNEW/RCOURSE/Rcourse/imgPres/data_tidying_table_messy_bad.png"
    inkscape:export-xdpi="150"
    inkscape:export-ydpi="150"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
      id="defs6"><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath18"><path
@@ -70,16 +70,16 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="1.681987"
-     inkscape:cx="248.17523"
-     inkscape:cy="-90.368092"
+     inkscape:zoom="1.1893444"
+     inkscape:cx="254.82301"
+     inkscape:cy="52.829569"
      inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="0"
      inkscape:current-layer="g1475"
      showguides="true"
      inkscape:guide-bbox="true"><sodipodi:guide
-       position="353.13574,67.746602"
+       position="353.13574,217.34664"
        orientation="1,0"
        id="guide1261"
        inkscape:locked="false" /></sodipodi:namedview><g
@@ -87,8 +87,7 @@
      inkscape:groupmode="layer"
      inkscape:label="data_tidying_table01"
      transform="matrix(1.3333333,0,0,-1.3333333,-75.599998,1018.6)"
-     style="display:inline"
-     sodipodi:insensitive="true"><g
+     style="display:inline"><g
        id="g12"><g
          id="g14"
          clip-path="url(#clipPath18)" /></g><path
@@ -799,7 +798,7 @@
            id="tspan1175"
            sodipodi:role="line"
            x="31.079102"
-           y="0">head</tspan></text>
+           y="0">Head</tspan></text>
 </g><g
        id="g1185"><text
          id="text1183"
@@ -879,7 +878,7 @@
            id="tspan1223"
            sodipodi:role="line"
            x="31.079102"
-           y="0">GW_head</tspan></text>
+           y="0">RIV_head</tspan></text>
 </g><g
        id="g1233"><text
          id="text1231"
@@ -1038,7 +1037,7 @@
            id="tspan1319"
            sodipodi:role="line"
            x="31.079102"
-           y="0">Head</tspan></text>
+           y="0">324/head</tspan></text>
 </g><g
        id="g1329"><text
          id="text1327"
@@ -1078,7 +1077,7 @@
            id="tspan1343"
            sodipodi:role="line"
            x="23.442383"
-           y="0">14332/nitrat</tspan></text>
+           y="0">nitrat</tspan></text>
 </g><g
        id="g1353"><text
          id="text1351"
@@ -1277,7 +1276,7 @@
            id="tspan1463"
            sodipodi:role="line"
            x="31.079102"
-           y="0">head</tspan></text>
+           y="0">HEAD</tspan></text>
 </g><g
        id="g1473"><text
          id="text1471"
@@ -1292,7 +1291,7 @@
      id="layer1"
      inkscape:label="tidy_data"
      style="display:none"
-     transform="translate(-75.599998,-103.88192)"><g
+     transform="translate(-75.599998,-103.88195)"><g
        transform="matrix(1.3333333,0,0,-1.3333333,-2.1e-6,1122.4818)"
        id="g100-6" /><g
        id="g1554"><path
