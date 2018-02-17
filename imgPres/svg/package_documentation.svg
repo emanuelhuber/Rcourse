@@ -11,12 +11,15 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="235.61493mm"
-   height="145.60458mm"
-   viewBox="0 0 235.61493 145.60458"
+   height="150.49271mm"
+   viewBox="0 0 235.61493 150.4927"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 (unknown)"
-   sodipodi:docname="package_documentation.svg">
+   sodipodi:docname="package_documentation.svg"
+   inkscape:export-filename="/media/data/huber/Documents/WORKNEW/RCOURSE/Rcourse/imgPres/documentation_04.png"
+   inkscape:export-xdpi="150"
+   inkscape:export-ydpi="150">
   <defs
      id="defs2">
     <marker
@@ -118,8 +121,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="391.10264"
-     inkscape:cy="128.14485"
+     inkscape:cx="100.33469"
+     inkscape:cy="-19.410812"
      inkscape:document-units="mm"
      inkscape:current-layer="layer5"
      showgrid="false"
@@ -149,7 +152,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      style="display:inline"
-     transform="translate(-15.433841,-45.639648)">
+     transform="translate(-15.433841,-40.751533)">
     <image
        y="45.772148"
        x="15.566341"
@@ -2302,7 +2305,7 @@ igL/P6NkohaN2sO7AAAAAElFTkSuQmCC
      id="layer2"
      inkscape:label="ref"
      style="display:none"
-     transform="translate(-15.433841,-45.639648)">
+     transform="translate(-15.433841,-40.751533)">
     <image
        y="45.772148"
        x="141.00024"
@@ -2342,7 +2345,7 @@ igL/P6NkohaN2sO7AAAAAElFTkSuQmCC
      id="layer3"
      inkscape:label="vignette"
      style="display:none"
-     transform="translate(-15.433841,-45.639648)">
+     transform="translate(-15.433841,-40.751533)">
     <image
        y="45.772148"
        x="141.02502"
@@ -2354,14 +2357,14 @@ igL/P6NkohaN2sO7AAAAAElFTkSuQmCC
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.3499999px;line-height:4.23333311px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="140.24519"
-       y="145.48907"
+       x="132.48193"
+       y="137.0107"
        id="text1012-7"
        transform="rotate(-20.113541)"><tspan
          sodipodi:role="line"
          id="tspan1010-0"
-         x="140.24519"
-         y="145.48907"
+         x="132.48193"
+         y="137.0107"
          style="font-size:8.8194437px;fill:#d40000;stroke-width:0.26458332px">vignette</tspan></text>
     <rect
        style="display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.26499999;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -2383,7 +2386,7 @@ igL/P6NkohaN2sO7AAAAAElFTkSuQmCC
      id="layer4"
      inkscape:label="source"
      style="display:none"
-     transform="translate(-15.433841,-45.639648)">
+     transform="translate(-15.433841,-40.751533)">
     <g
        id="g2590"
        transform="translate(-9.5250005)">
@@ -2410,11 +2413,57 @@ igL/P6NkohaN2sO7AAAAAElFTkSuQmCC
        id="path1029-9-3-6"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.3499999px;line-height:4.23333311px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="158.67105"
+       y="165.52025"
+       id="text1012-7-0"
+       transform="rotate(-20.113541)"><tspan
+         sodipodi:role="line"
+         id="tspan1010-0-7"
+         x="158.67105"
+         y="165.52025"
+         style="font-size:8.8194437px;fill:#d40000;stroke-width:0.26458332px">package source</tspan></text>
+    <rect
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ca1d0b;stroke-width:0.465;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:0.465, 0.465;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3689"
+       width="43.401512"
+       height="7.8051271"
+       x="144.67943"
+       y="164.78577"
+       ry="8.5265149e-14" />
+    <rect
+       style="display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ca1d0b;stroke-width:0.465;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:0.465, 0.465;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3689-4"
+       width="43.401512"
+       height="7.8051271"
+       x="144.67943"
+       y="181.18971"
+       ry="8.5265155e-14" />
+    <rect
+       style="display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ca1d0b;stroke-width:0.465;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:0.465, 0.465;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3689-4-0"
+       width="43.401512"
+       height="7.8051271"
+       x="144.67943"
+       y="132.50703"
+       ry="8.5265162e-14" />
+    <rect
+       style="display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ca1d0b;stroke-width:0.465;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:0.465, 0.465;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3689-4-0-1"
+       width="43.401512"
+       height="7.8051271"
+       x="144.67943"
+       y="124.04041"
+       ry="8.5265169e-14" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer5"
-     inkscape:label="install.package">
+     inkscape:label="install.package"
+     style="display:inline"
+     transform="translate(-4.0729904e-7,4.8881151)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.43077278px;line-height:3.43077278px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2144233px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -2426,7 +2475,7 @@ igL/P6NkohaN2sO7AAAAAElFTkSuQmCC
          x="123.36023"
          y="23.690727"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:Consolas;text-align:start;text-anchor:start;stroke-width:0.2144233px"><tspan
-   style="-inkscape-font-specification:'Consolas Bold';font-family:Consolas;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000080"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:'Consolas Bold';fill:#000080"
    id="tspan3623">install.packages</tspan>(<tspan
    style="fill:#008000"
    id="tspan3635">&quot;sp&quot;</tspan>)</tspan><tspan
@@ -2435,7 +2484,7 @@ igL/P6NkohaN2sO7AAAAAElFTkSuQmCC
          y="27.234985"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:Consolas;text-align:start;text-anchor:start;stroke-width:0.2144233px"
          id="tspan3515"><tspan
-   style="fill:#000080;-inkscape-font-specification:'Consolas Bold';font-family:Consolas;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:'Consolas Bold';fill:#000080"
    id="tspan3629">library</tspan>(<tspan
    style="fill:#008000"
    id="tspan3637">&quot;sp&quot;</tspan>)</tspan><tspan
@@ -2449,7 +2498,7 @@ igL/P6NkohaN2sO7AAAAAElFTkSuQmCC
          y="34.210014"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:Consolas;text-align:start;text-anchor:start;stroke-width:0.2144233px"
          id="tspan3517"><tspan
-   style="fill:#000080;-inkscape-font-specification:'Consolas Bold';font-family:Consolas;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:'Consolas Bold';fill:#000080"
    id="tspan3639">demo</tspan>(meuse, <tspan
    style="fill:#aa0000"
    id="tspan3653">ask =</tspan> <tspan
@@ -2466,10 +2515,10 @@ igL/P6NkohaN2sO7AAAAAElFTkSuQmCC
          id="tspan3523" /><tspan
          sodipodi:role="line"
          x="123.36023"
-         y="41.185043"
+         y="41.185047"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:Consolas;text-align:start;text-anchor:start;stroke-width:0.2144233px"
          id="tspan3533"><tspan
-   style="-inkscape-font-specification:'Consolas Bold';font-family:Consolas;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000080"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:'Consolas Bold';fill:#000080"
    id="tspan3643">plot</tspan>(meuse, <tspan
    style="fill:#aa0000"
    id="tspan3657">cex =</tspan> sqrt(meuse$zinc)/12, <tspan
@@ -2479,10 +2528,10 @@ igL/P6NkohaN2sO7AAAAAElFTkSuQmCC
    id="tspan3651">TRUE</tspan>)</tspan><tspan
          sodipodi:role="line"
          x="123.36023"
-         y="44.729301"
+         y="44.729305"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:Consolas;text-align:start;text-anchor:start;stroke-width:0.2144233px"
          id="tspan3535"><tspan
-   style="-inkscape-font-specification:'Consolas Bold';font-family:Consolas;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000080"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:'Consolas Bold';fill:#000080"
    id="tspan3647">plot</tspan>(meuse.riv, <tspan
    style="fill:#aa0000"
    id="tspan3661">add =</tspan> <tspan
@@ -2492,7 +2541,7 @@ igL/P6NkohaN2sO7AAAAAElFTkSuQmCC
    id="tspan3663">col =</tspan> grey(.9, alpha = .5))</tspan><tspan
          sodipodi:role="line"
          x="123.36023"
-         y="48.27356"
+         y="48.273563"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:Consolas;text-align:start;text-anchor:start;stroke-width:0.2144233px"
          id="tspan3527" /><tspan
          sodipodi:role="line"
@@ -2502,7 +2551,7 @@ igL/P6NkohaN2sO7AAAAAElFTkSuQmCC
          id="tspan3521" /><tspan
          sodipodi:role="line"
          x="123.36023"
-         y="55.135105"
+         y="55.135109"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:Consolas;text-align:start;text-anchor:start;stroke-width:0.2144233px"
          id="tspan3519" /></text>
     <image
