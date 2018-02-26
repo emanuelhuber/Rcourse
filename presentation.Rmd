@@ -6,7 +6,7 @@ header-includes:
   - \widowpenalties 1 150
 linkcolor: red
 urlcolor: blue
-fontsize: 9pt
+fontsize: 8pt
 output:
   beamer_presentation:
     keep_tex: yes
@@ -60,23 +60,16 @@ knitr::opts_chunk$set(echo = FALSE, size = 'tiny')
 
 ## R Environment: GUI and packages
 
-![Package](imgPres/packages.png)
 
-
-## R task views
 
 \columnsbegin
-
-\column{.6\textwidth}
-
+\column{.5\textwidth}
+![Package](imgPres/packages.png)
+\column{.5\textwidth} 
+**More than 12'000 packages!**
 ![R Cran task view](imgPres/rcran-task-view.png)
-
-\column{.4\textwidth}
-
-* **More than 12'000 packages!**
-* Where is the "hydrogeology" task?!
-
 \columnsend
+
 
 # Potential use of R for AUG group
 
@@ -92,7 +85,7 @@ knitr::opts_chunk$set(echo = FALSE, size = 'tiny')
 
 * all-in-one tool
 * no licence 
-* teaching/research/reporting
+* teaching, research, reporting
 * automation and reproducible workflow
  
 \columnsend
@@ -307,6 +300,34 @@ Example: Groundwater head data from FEFLOW (merci MM)
 
 ![time_series_head_analysis04](imgPres/time_series_head_analysis04.png)
 
+## Time series - visualizing (5)
+
+\columnsbegin
+\column{.4\textwidth}
+![time_series_head_analysis04](imgPres/ts_residuals.png)
+\column{.6\textwidth} 
+![time_series_head_analysis04](imgPres/ts_resdiuals_examples.png)
+\columnsend
+
+## Time series - clustering 
+
+\columnsbegin
+\column{.7\textwidth}
+
+![time_series_head_analysis04](imgPres/ts_cluster_dendo.png){ width=90% }
+
+![time_series_head_analysis04](imgPres/ts_cluster_map.png){ width=80% }
+\column{.3\textwidth}
+
+* remove obs with too many `NA`'s
+* interpolate missing data `NA`
+* compute distances between obs
+* cut dendrogram --> classes
+* plot onto map
+
+
+\columnsend
+
 ## Time series - statistics 
 * Daily, monthly, yearly values (cf. book: Analysis of ecological data with R)
 * Auto-correlation function (ACF) and Cross-correlation function (CCF)
@@ -380,13 +401,11 @@ package [`changepoint`](https://cran.r-project.org/web/packages/changepoint)
         - `RPyGeo`: A wrapper for accessing ArcGIS from R. Utilizes intermediate python scripts to fire up ArcGIS. Hasn’t been updated in some time.
         - `RSAGA`: R interface to the command line version of SAGA GIS.
 * **Cheat sheet**
-    - [eXtensible Time Series: `xts`](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/xts_Cheat_Sheet_R.pdf)
-    - [How to deal with date and time: `lubridate` cheat sheet](https://github.com/rstudio/cheatsheets/raw/master/lubridate.pdf)
+    - nothing...
 * **Tutorials/book**
     - [Book: geocomputation with R](https://bookdown.org/robinlovelace/geocompr)
-    - [check `zoo` vignettes](https://cran.r-project.org/web/packages/zoo/index.html) 
-    - [Dates and Times Made Easy with `lubridate`](http://vita.had.co.nz/papers/lubridate.pdf)
-
+    - 
+    
 ## R GIS 
 
 \columnsbegin
@@ -414,12 +433,6 @@ package [`changepoint`](https://cran.r-project.org/web/packages/changepoint)
 
 
 - download tiles webgis of Italy region
-- spatial interpolation
-   - [gstat](http://rspatial.org/analysis/rst/4-interpolation.html)
-   - [gstat](https://rpubs.com/nabilabd/118172)
-   - [ipdw](https://cran.r-project.org/web/packages/ipdw/vignettes/ipdw2.html)
-   - [automap package](http://www.numbertheory.nl/2013/02/17/automatic-spatial-interpolation-with-r-the-automap-package/)
-   - [check that](https://mgimond.github.io/Spatial/interpolation-in-r.html)
 
 \columnsend
 
@@ -439,6 +452,15 @@ package [`changepoint`](https://cran.r-project.org/web/packages/changepoint)
 ## R GIS - Map (2)
 ![SF Crime Map](imgPres/map_SF_Crime2014.png)
 [link](http://sharpsightlabs.com/blog/mapping-san-francisco-crime/)
+
+## R GIS -  Spatial interpolation
+- spatial interpolation
+   - [gstat](http://rspatial.org/analysis/rst/4-interpolation.html)
+   - [gstat](https://rpubs.com/nabilabd/118172)
+   - [ipdw](https://cran.r-project.org/web/packages/ipdw/vignettes/ipdw2.html)
+   - [automap package](http://www.numbertheory.nl/2013/02/17/automatic-spatial-interpolation-with-r-the-automap-package/)
+   - [check that](https://mgimond.github.io/Spatial/interpolation-in-r.html)
+
 
 ## R GIS -  LiDAR
 R package for airborne LiDAR data manipulation and visualisation for forestry application

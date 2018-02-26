@@ -1,4 +1,4 @@
-\documentclass[9pt,ignorenonframetext,]{beamer}
+\documentclass[8pt,ignorenonframetext,]{beamer}
 \setbeamertemplate{caption}[numbered]
 \setbeamertemplate{caption label separator}{: }
 \setbeamercolor{caption name}{fg=normal text.fg}
@@ -133,7 +133,7 @@
 
 \title{R}
 \author{Emanuel Huber}
-\date{Februar 25, 2018}
+\date{Februar 26, 2018}
 
 %----- ADD MANU
 \newcommand{\columnsbegin}{\begin{columns}}
@@ -240,29 +240,10 @@ of Electrical and Electronics Engineers ranking}
 
 \begin{frame}{R Environment: GUI and packages}
 
-\includegraphics{imgPres/packages.png}
-
-\end{frame}
-
-\begin{frame}{R task views}
-
 \columnsbegin
-
-\column{.6\textwidth}
-
-\includegraphics{imgPres/rcran-task-view.png}
-
-\column{.4\textwidth}
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{More than 12'000 packages!}
-\item
-  Where is the ``hydrogeology'' task?!
-\end{itemize}
-
-\columnsend
+\column{.5\textwidth} \includegraphics{imgPres/packages.png}
+\column{.5\textwidth} \textbf{More than 12'000 packages!}
+\includegraphics{imgPres/rcran-task-view.png} \columnsend
 
 \end{frame}
 
@@ -286,7 +267,7 @@ group}\label{potential-use-of-r-for-aug-group}
 \item
   no licence
 \item
-  teaching/research/reporting
+  teaching, research, reporting
 \item
   automation and reproducible workflow
 \end{itemize}
@@ -721,6 +702,43 @@ Example: Groundwater head data from FEFLOW (merci MM)
 
 \end{frame}
 
+\begin{frame}{Time series - visualizing (5)}
+
+\columnsbegin
+\column{.4\textwidth} \includegraphics{imgPres/ts_residuals.png}
+\column{.6\textwidth}
+\includegraphics{imgPres/ts_resdiuals_examples.png} \columnsend
+
+\end{frame}
+
+\begin{frame}[fragile]{Time series - clustering}
+
+\columnsbegin
+\column{.7\textwidth}
+
+\includegraphics[width=0.90000\textwidth]{imgPres/ts_cluster_dendo.png}
+
+\includegraphics[width=0.80000\textwidth]{imgPres/ts_cluster_map.png}
+\column{.3\textwidth}
+
+\begin{itemize}
+\tightlist
+\item
+  remove obs with too many \texttt{NA}'s
+\item
+  interpolate missing data \texttt{NA}
+\item
+  compute distances between obs
+\item
+  cut dendrogram --\textgreater{} classes
+\item
+  plot onto map
+\end{itemize}
+
+\columnsend
+
+\end{frame}
+
 \begin{frame}{Time series - statistics}
 
 \begin{itemize}
@@ -962,20 +980,6 @@ is a GIS software} (sp, rgeos, raster, rgdal) see also \texttt{sf} :
   \end{itemize}
 \item
   download tiles webgis of Italy region
-\item
-  spatial interpolation
-\item
-  \href{http://rspatial.org/analysis/rst/4-interpolation.html}{gstat}
-\item
-  \href{https://rpubs.com/nabilabd/118172}{gstat}
-\item
-  \href{https://cran.r-project.org/web/packages/ipdw/vignettes/ipdw2.html}{ipdw}
-\item
-  \href{http://www.numbertheory.nl/2013/02/17/automatic-spatial-interpolation-with-r-the-automap-package/}{automap
-  package}
-\item
-  \href{https://mgimond.github.io/Spatial/interpolation-in-r.html}{check
-  that}
 \end{itemize}
 
 \columnsend
@@ -1008,6 +1012,28 @@ class}
 
 \includegraphics{imgPres/map_SF_Crime2014.png}
 \href{http://sharpsightlabs.com/blog/mapping-san-francisco-crime/}{link}
+
+\end{frame}
+
+\begin{frame}{R GIS - Spatial interpolation}
+
+\begin{itemize}
+\tightlist
+\item
+  spatial interpolation
+\item
+  \href{http://rspatial.org/analysis/rst/4-interpolation.html}{gstat}
+\item
+  \href{https://rpubs.com/nabilabd/118172}{gstat}
+\item
+  \href{https://cran.r-project.org/web/packages/ipdw/vignettes/ipdw2.html}{ipdw}
+\item
+  \href{http://www.numbertheory.nl/2013/02/17/automatic-spatial-interpolation-with-r-the-automap-package/}{automap
+  package}
+\item
+  \href{https://mgimond.github.io/Spatial/interpolation-in-r.html}{check
+  that}
+\end{itemize}
 
 \end{frame}
 
