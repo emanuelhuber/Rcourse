@@ -32,7 +32,7 @@ knitr::opts_chunk$set(echo = FALSE, size = 'tiny')
 * Talk 1:
     1. Overview of R 
     2. potential use for AUG-group
-* Talk 2: Some important concept on R language
+* Talk 2: R language - some important concepts
 
 ### Resources
 - for each task (on [https://emanuelhuber.github.io/Rcourse/](https://emanuelhuber.github.io/Rcourse/)
@@ -188,7 +188,7 @@ knitr::opts_chunk$set(echo = FALSE, size = 'tiny')
 
 
 
-## Resources - data shaping
+## Resources - Data shaping
 * **Package**
     - [`tidyr`](https://cran.r-project.org/web/packages/tidyr/index.html)
 * **Cheat sheet**
@@ -219,7 +219,7 @@ Tidy data
 x_tidy <- tidyr::spread(x, parameter, value)
 ```
 
-reverse process possible
+reverse process possible with `tidyr:gather()`
 
 
 
