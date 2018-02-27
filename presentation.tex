@@ -35,7 +35,7 @@
 }{}
 \newif\ifbibliography
 \hypersetup{
-            pdftitle={R},
+            pdftitle={R\ldots{} for hydrogeologists(?)},
             pdfauthor={Emanuel Huber},
             colorlinks=true,
             linkcolor=red,
@@ -131,9 +131,9 @@
 \setcounter{secnumdepth}{0}
 \widowpenalties 1 150
 
-\title{R}
+\title{R\ldots{} for hydrogeologists(?)}
 \author{Emanuel Huber}
-\date{Februar 26, 2018}
+\date{Februar 28, 2018}
 
 %----- ADD MANU
 \newcommand{\columnsbegin}{\begin{columns}}
@@ -161,44 +161,46 @@
 
 \end{frame}
 
-\begin{frame}{Structure}
+\begin{frame}{Outline}
 
 \begin{itemize}
 \tightlist
 \item
-  Talk:
+  Talk 1:
 
   \begin{enumerate}
   \def\labelenumi{\arabic{enumi}.}
   \tightlist
   \item
-    Overview of R and potential use for AUG-group
+    Overview of R
   \item
-    Some important concept on R language
+    potential use for AUG-group
   \end{enumerate}
 \item
-  Resources
+  Talk 2: Some important concept on R language
+\end{itemize}
+
+\begin{block}{Resources}
+
+\begin{itemize}
+\tightlist
+\item
+  for each task (on \url{https://emanuelhuber.github.io/Rcourse/}
 
   \begin{itemize}
   \tightlist
   \item
-    for each task (on \url{https://emanuelhuber.github.io/Rcourse/}
-
-    \begin{itemize}
-    \tightlist
-    \item
-      list of best R-package
-    \item
-      cheat sheets
-    \item
-      online book/course/tutorial
-    \end{itemize}
+    list of best R-package
   \item
-    some tutorial on P:/RKurs (including data)
+    cheat sheets
+  \item
+    online book/course/tutorial
   \end{itemize}
 \item
-  What happens next?
+  some tutorial on P:/RKurs (including data)
 \end{itemize}
+
+\end{block}
 
 \end{frame}
 
@@ -412,7 +414,7 @@ package\strut
 
 \end{frame}
 
-\begin{frame}[fragile]{Data cleaning 1}
+\begin{frame}[fragile]{Data cleaning (1)}
 
 \columnsbegin
 
@@ -457,10 +459,13 @@ package\strut
 
 \end{frame}
 
-\begin{frame}{Data cleaning 2}
+\begin{frame}{Data cleaning (2)}
 
-detect typo errors \textgreater{} approximate string matching:
+\columnsbegin
+\column{.7\textwidth}
 \includegraphics{imgPres/data_cleaning_dendrogram.png}
+\column{.3\textwidth} \textbf{detect typo errors} - distance between
+strings - dendrogram visualisation - partial string matching \columnsend
 
 \end{frame}
 
@@ -499,9 +504,12 @@ detect typo errors \textgreater{} approximate string matching:
 
 \end{frame}
 
-\begin{frame}{Data shaping 1 (tidy data)}
+\begin{frame}[fragile]{Data shaping 1 (tidy data)}
 
-Tidy data satisfies three rules
+\columnsbegin
+\column{.45\textwidth} ``Messy'' data
+\includegraphics{imgPres/data_tidying_table_messy.png}
+\column{.45\textwidth} Tidy data satisfies three rules
 (\href{http://garrettgman.github.io/tidying/}{see Data Science with R}):
 
 \begin{itemize}
@@ -514,13 +522,7 @@ Tidy data satisfies three rules
   Each value is placed in its own cell
 \end{itemize}
 
-\end{frame}
-
-\begin{frame}[fragile]{Data shaping 2 (tidy data)}
-
-``Messy'' data
-
-\includegraphics[width=0.50000\textwidth]{imgPres/data_tidying_table_messy.png}
+\columnsend
 
 Tidy data
 
@@ -531,6 +533,8 @@ Tidy data
 \NormalTok{x_tidy <-}\StringTok{ }\NormalTok{tidyr::}\KeywordTok{spread}\NormalTok{(x, parameter, value)}
 \end{Highlighting}
 \end{Shaded}
+
+reverse process possible
 
 \end{frame}
 
@@ -670,23 +674,27 @@ Check package for time-series processing:
 
 \end{frame}
 
-\begin{frame}{Time series - -visualizing (0)}
+\begin{frame}[fragile]{Time series - Dynamic visualisation}
 
-dynamic time series visualisation
+Dynamic time series visualisation with package
+\href{https://cran.r-project.org/web/packages/dygraph/index.html}{\texttt{dygraph}}
 
 \includegraphics{imgPres/dygraph.png}
 
 \end{frame}
 
-\begin{frame}[fragile]{Time series - -visualizing (1)}
+\begin{frame}[fragile]{Time series - Visualisation}
 
-Example: Groundwater head data from FEFLOW (merci MM)
+merci MM!
+
+Import of groundwater head data from FEFLOW
+
 \texttt{P:/RKurs/...}
 \includegraphics{imgPres/time_series_head_analysis01.png}
 
 \end{frame}
 
-\begin{frame}{Time series - -visualizing (2)}
+\begin{frame}{Time series - Simulated vs observed}
 
 \columnsbegin
 \column{.5\textwidth}
@@ -696,13 +704,13 @@ Example: Groundwater head data from FEFLOW (merci MM)
 
 \end{frame}
 
-\begin{frame}{Time series - -visualizing (4)}
+\begin{frame}{Time series - Goodness-of-fit}
 
 \includegraphics{imgPres/time_series_head_analysis04.png}
 
 \end{frame}
 
-\begin{frame}{Time series - visualizing (5)}
+\begin{frame}{Time series - Residual visualisation \emph{à la GMS}}
 
 \columnsbegin
 \column{.4\textwidth} \includegraphics{imgPres/ts_residuals.png}
@@ -711,7 +719,7 @@ Example: Groundwater head data from FEFLOW (merci MM)
 
 \end{frame}
 
-\begin{frame}[fragile]{Time series - clustering}
+\begin{frame}[fragile]{Time series - Clustering}
 
 \columnsbegin
 \column{.7\textwidth}
@@ -781,6 +789,14 @@ website}
 
 \end{frame}
 
+\begin{frame}{Time series - Interpolation}
+
+\includegraphics[height=0.35000\textwidth]{imgPres/TS_1D_interp.png}
+
+\includegraphics[height=0.35000\textwidth]{imgPres/TS_GP_interp.png}
+
+\end{frame}
+
 \begin{frame}{Time series - regression}
 
 \begin{itemize}
@@ -791,7 +807,7 @@ website}
 
 \end{frame}
 
-\begin{frame}[fragile]{Time series - trend and seasonal components}
+\begin{frame}[fragile]{Time series - Trend and seasonal components}
 
 \columnsbegin
 \column{.5\textwidth} \includegraphics{imgPres/additive-decompose.png}
@@ -903,11 +919,7 @@ is a GIS software} (sp, rgeos, raster, rgdal) see also \texttt{sf} :
   \begin{itemize}
   \tightlist
   \item
-    \href{https://s3.amazonaws.com/assets.datacamp.com/blog_assets/xts_Cheat_Sheet_R.pdf}{eXtensible
-    Time Series: \texttt{xts}}
-  \item
-    \href{https://github.com/rstudio/cheatsheets/raw/master/lubridate.pdf}{How
-    to deal with date and time: \texttt{lubridate} cheat sheet}
+    nothing\ldots{}
   \end{itemize}
 \item
   \textbf{Tutorials/book}
@@ -918,11 +930,8 @@ is a GIS software} (sp, rgeos, raster, rgdal) see also \texttt{sf} :
     \href{https://bookdown.org/robinlovelace/geocompr}{Book:
     geocomputation with R}
   \item
-    \href{https://cran.r-project.org/web/packages/zoo/index.html}{check
-    \texttt{zoo} vignettes}
-  \item
-    \href{http://vita.had.co.nz/papers/lubridate.pdf}{Dates and Times
-    Made Easy with \texttt{lubridate}}
+    \href{http://rspatial.org/intr/index.html}{Spatial Data Analysis and
+    Modeling with R}
   \end{itemize}
 \end{itemize}
 
@@ -1015,25 +1024,21 @@ class}
 
 \end{frame}
 
-\begin{frame}{R GIS - Spatial interpolation}
+\begin{frame}[fragile]{R GIS - Spatial interpolation}
 
-\begin{itemize}
-\tightlist
-\item
-  spatial interpolation
-\item
-  \href{http://rspatial.org/analysis/rst/4-interpolation.html}{gstat}
-\item
-  \href{https://rpubs.com/nabilabd/118172}{gstat}
-\item
-  \href{https://cran.r-project.org/web/packages/ipdw/vignettes/ipdw2.html}{ipdw}
-\item
-  \href{http://www.numbertheory.nl/2013/02/17/automatic-spatial-interpolation-with-r-the-automap-package/}{automap
-  package}
-\item
-  \href{https://mgimond.github.io/Spatial/interpolation-in-r.html}{check
-  that}
-\end{itemize}
+Raster interpolation \columnsbegin
+\column{.4\textwidth} Adapted from
+\href{http://rspatial.org/analysis/rst/4-interpolation.html}{here} and
+\href{https://mgimond.github.io/Spatial/interpolation-in-r.html\#st-order-polynomial-fit}{here}
+\includegraphics{imgPres/GIS_raster_interp_data.png}
+\column{.6\textwidth} \includegraphics{imgPres/GIS_spatial_interp.png}
+\columnsend
+
+See also -
+\href{https://cran.r-project.org/web/packages/ipdw/vignettes/ipdw2.html}{\texttt{ipdw}
+Spatial Interpolation via Inverse Path Distance Weighting} -
+\href{https://mgimond.github.io/Spatial/interpolation-in-r.html}{check
+that}
 
 \end{frame}
 
