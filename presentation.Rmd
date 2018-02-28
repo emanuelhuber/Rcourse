@@ -31,10 +31,11 @@ knitr::opts_chunk$set(echo = FALSE, size = 'tiny')
 
 * Talk 1:
     1. Overview of R 
-    2. potential use for AUG-group
+    2. R show case: potential use for AUG-group    
 * Talk 2: R language - some important concepts
 
 ### Resources
+- presentations on P:/RKurs
 - for each task (on [https://emanuelhuber.github.io/Rcourse/](https://emanuelhuber.github.io/Rcourse/)
     - list of best R-package
     - cheat sheets
@@ -50,12 +51,12 @@ knitr::opts_chunk$set(echo = FALSE, size = 'tiny')
 
 ![R sixth top programming language](https://spectrum.ieee.org/image/MjkyNzIzNQ.jpeg){ width=100% }
 
-## Why R is so popular
+## Why R is so popular?
 
 * free and open-source (no licence)
 * runs on Linux, Windows and MacOS.
 * large community
-* many packages available that are documented (help files + vignette)
+* many packages available that are documented (help files + vignettes)
 * can link C, C++, Fortran code
 * excellent tools for data analysis (Google, Airbnb, Facebook, Microsoft...)
 * high-quality graphics
@@ -131,10 +132,10 @@ knitr::opts_chunk$set(echo = FALSE, size = 'tiny')
 * **Cheat sheet**
     - [regular expression cheat sheet](https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf)
     - [`dplyr`: data transformation cheat sheet](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf)
-* **Tutorials/book**
+* **Vignettes/Tutorials/book**
     - [Tutorial: An introduction to data cleaning with R (53 p.)](https://cran.r-project.org/doc/contrib/de_Jonge+van_der_Loo-Introduction_to_data_cleaning_with_R.pdf)
     - [Hands-On Data Science with R: Data Preparation](https://onepager.togaware.com/DataO.pdf)
-    - [check `dplyr`-vignettes](https://cran.r-project.org/web/packages/dplyr/index.html)
+    - [`dplyr` vignettes](https://cran.r-project.org/web/packages/dplyr/index.html)
     - [Tutorial: Regular Expressions in R](https://rstudio-pubs-static.s3.amazonaws.com/74603_76cd14d5983f47408fdf0b323550b846.html)
 
 
@@ -146,7 +147,8 @@ knitr::opts_chunk$set(echo = FALSE, size = 'tiny')
 
 ![not tidy data](imgPres/data_tidying_table_messy_bad.png)
 
-* rename variables: `Head`, `RIV_head`, `324/head`, `head`, `HEAD` -> `head`
+* rename variables:
+    `Head`, `RIV_head`, `324/head`, `head`, `HEAD` in **`head`**
     ```{r size = 'tiny', eval = FALSE, echo = TRUE}
     pattern <- "^RIV_|^[[:digit:]]+/"
     x$parameter <- sub(pattern, "", x$parameter)
@@ -180,10 +182,16 @@ knitr::opts_chunk$set(echo = FALSE, size = 'tiny')
 \column{.7\textwidth}
 ![dendrogram](imgPres/data_cleaning_dendrogram.png)
 \column{.3\textwidth} 
+
 **detect typo errors**
+
 - distance between strings
 - dendrogram visualisation
 - partial string matching
+
+<!-- TODO: add red rectangle to show which strings
+are in fact the same -->
+
 \columnsend
 
 
@@ -197,7 +205,7 @@ knitr::opts_chunk$set(echo = FALSE, size = 'tiny')
     - Concepts of data tidying are well explained in the chapter [Data Tidying](http://garrettgman.github.io/tidying/) from the book Data science with R.
 
 
-## Data shaping 1 (tidy data)
+## Data shaping
 \columnsbegin
 \column{.45\textwidth}
 "Messy" data
@@ -219,7 +227,7 @@ Tidy data
 x_tidy <- tidyr::spread(x, parameter, value)
 ```
 
-reverse process possible with `tidyr:gather()`
+reverse process possible with `tidyr::gather()`
 
 
 
@@ -237,8 +245,28 @@ reverse process possible with `tidyr:gather()`
          - dendrogram [nice tutorial](http://www.sthda.com/english/wiki/beautiful-dendrogram-visualizations-in-r-5-must-known-methods-unsupervised-machine-learning), [another tutorial](https://rpubs.com/gaston/dendrograms)
          - k-means algorithm
 
+## check
+> In short, pair-wise x-y plots
+were computed between the average baselines of all FCM and
+sensor parameters for a first visual observation of any apparent
+correlations. The pair-wise correlations between the full base-
+lines of all parameters were then quantified by the computation
+of Pearson’s correlation coefficients (PCC, linear relationship)
+and Spearman’s rank correlation coefficients (monotonic rela-
+tionship) after standardization of the FCM and sensor data sets
+(see Section 8 in supplementary information). The significance
+of the correlations was assessed by the computation of p-values
+at 95% confidence level. The pair-wise coefficients were displayed
+in a heat map for efficient representation of the gradients in pos-
+itive and inverse correlations between parameters, and for rapid
+identification of the pre-dominant correlations. In this heat map,
+the parameters were reordered by hierarchical clustering using the
+Ward algorithm (see Section 8 in supplementary information).
+The additional R packages Vegan (Oksanen et al., 2009), Heatplus
+(Ploner, 2011), and Heatmap.plus (Day, 2007) were used to these
+ends.
+[TP1 Basellandschaft](https://www.baselland.ch/politik-und-behorden/direktionen/bau-und-umweltschutzdirektion/umweltschutz-energie/wasser/wasserversorgung/publikationen/downloads/tp1-karstsysteme.pdf)
 
-## Sensitivity analysis 
          
 
 ## Time series - resources
@@ -250,15 +278,17 @@ reverse process possible with `tidyr:gather()`
 * **Cheat sheet**
     - [eXtensible Time Series: `xts`](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/xts_Cheat_Sheet_R.pdf)
     - [How to deal with date and time: `lubridate` cheat sheet](https://github.com/rstudio/cheatsheets/raw/master/lubridate.pdf)
-* **Tutorials/book**
-    - [check `xts` vignettes](https://cran.r-project.org/web/packages/xts/index.html)
-    - [check `zoo` vignettes](https://cran.r-project.org/web/packages/zoo/index.html) 
+* **Vignette/tutorials/book**
+    - [`xts` vignettes](https://cran.r-project.org/web/packages/xts/index.html)
+    - [`zoo` vignettes](https://cran.r-project.org/web/packages/zoo/index.html) 
     - [Dates and Times Made Easy with `lubridate`](http://vita.had.co.nz/papers/lubridate.pdf)
 
-Check package for time-series processing:
-
-* pracma 
-* signal
+ See also
+ 
+* [pracma]((https://cran.r-project.org/web/packages/pracma/index.html) for
+* [signal]((https://cran.r-project.org/web/packages/signal/index.html) for 
+* [check](http://uribo.github.io/rpkg_showcase/date_and_time/zoo.html)
+* Filling in missing values?
 
 <!--
 - [Tutorial for Introductory Analysis of
@@ -272,36 +302,84 @@ Bof:
 Can lubbridate handle summer time and winter time ?
 -->
 
-## Time series - Import and preparation
-
-* Import function (?)
-* Detect and remove anomalies in time-series
-    Application: remove anomalies and estimate true values
-    ![anomaly detection](imgPres/TS_anomalydetection.png)
-    [source](https://github.com/twitter/AnomalyDetection)
-* fill in missing values (interpolation)
-* regular time-step
-    - smoothing
-    - decimate
-
-
+   
 ## Time series - Dynamic visualisation
 
 Dynamic time series visualisation with package [`dygraph`](https://cran.r-project.org/web/packages/dygraph/index.html)
 
 ![dynamic time series visualisation](imgPres/dygraph.png)
 
+## Time series - Import and preparation
 
-## Time series - Visualisation
+* fill in missing values (interpolation)
+* regular time-step
+    - smoothing
+    - decimate
+    
+ > Online flow cytometry measurements were linearly interpolated and then sampled at equal time intervals (15-minutes) using the "approx()" command of the statistical software R39. This was to adjust for minor deviations from the 15-minutes sampling interval in the original data set...
 
-merci MM!
+[Nature](https://www.nature.com/articles/srep38462)
 
-Import of groundwater head data from FEFLOW 
 
-`P:/RKurs/...`
+## Time series - Interpolation
+
+![1D interpolation](imgPres/TS_1D_interp.png){height=35%}
+
+![Gaussian Process interpolation](imgPres/TS_GP_interp.png){height=35%}
+
+## Time series - statistics 
+* Daily, monthly, yearly values (cf. book: Analysis of ecological data with R)
+* Auto-correlation function (ACF) and Cross-correlation function (CCF)
+    See ARIMA model [tutorial](https://www.analyticsvidhya.com/blog/2015/12/complete-tutorial-time-series-modeling/), [tutorial2](http://a-little-book-of-r-for-time-series.readthedocs.io/en/latest/src/timeseries.html)
+* empirical cumulative distribution function
+
+
+
+## Time series - spectral analysis 
+* Fourier
+* SSA
+* ?
+* wavelet analysis
+* impulse response function: Check RRAWFLOW package: [rrawflow website](https://sd.water.usgs.gov/projects/RRAWFLOW/RRAWFLOW.html)
+
+
+- Example: NF-Fisch
+    Plot CP1 against CP2 and CP3: ellipses
+- CD-Experiment
+- [time-series cleanup](https://cran.r-project.org/web/packages/waterData/vignettes/vignette.pdf)
+- [time-series](http://www.css.cornell.edu/faculty/dgr2/teach/R/R_ts.pdf)
+
+
+## Time series - regression
+
+* Regression
+
+## Time series - Trend and seasonal components
+\columnsbegin
+\column{.5\textwidth}
+![additive decomposition](imgPres/additive-decompose.png)
+\column{.5\textwidth} 
+![multiplicative decomposition](imgPres/multiplicative-decompose.png)
+\columnsend
+
+<!--
+> ...The interpolated time series was then decomposed into a "trend component" (aperiodic dynamic), a "seasonality component" (periodic dynamic; R-code based terminology not related to seasons of the year), and a "remainder component" (noise and dynamics not accounted for by the above two components) using the "stl()" command...
+[Nature](https://www.nature.com/articles/srep38462) -->
+
+```r
+x_dcp_add <- decompose(x, "additive")
+x_dcp_mul <- decompose(x, "multiplicative")
+```
+[online tutorial](https://anomaly.io/seasonal-trend-decomposition-in-r/)
+
+
+## Time series - Import FEFLOW data
+
 ![time_series_head_analysis01](imgPres/time_series_head_analysis01.png)
 
-## Time series - Simulated vs observed
+source: MM
+
+## Time series - FEFLOW: Simulated vs observed
 
 \columnsbegin
 \column{.5\textwidth}
@@ -311,11 +389,11 @@ Import of groundwater head data from FEFLOW
 \columnsend
 
 
-## Time series - Goodness-of-fit
+## Time series - FEFLOW: Goodness-of-fit
 
 ![time_series_head_analysis04](imgPres/time_series_head_analysis04.png)
 
-## Time series - Residual visualisation *à la GMS*
+## Time series - FEFLOW: Residual visualisation *à la GMS*
 
 \columnsbegin
 \column{.4\textwidth}
@@ -343,47 +421,10 @@ Import of groundwater head data from FEFLOW
 
 \columnsend
 
-## Time series - statistics 
-* Daily, monthly, yearly values (cf. book: Analysis of ecological data with R)
-* Auto-correlation function (ACF) and Cross-correlation function (CCF)
-    See ARIMA model [tutorial](https://www.analyticsvidhya.com/blog/2015/12/complete-tutorial-time-series-modeling/), [tutorial2](http://a-little-book-of-r-for-time-series.readthedocs.io/en/latest/src/timeseries.html)
-* empirical cumulative distribution function
 
-## Time series - spectral analysis 
-* Fourier
-* SSA
-* ?
-* wavelet analysis
 
-## Time series - impulse response function 
-Check RRAWFLOW package 
-[rrawflow website](https://sd.water.usgs.gov/projects/RRAWFLOW/RRAWFLOW.html)
 
-## Time series - Interpolation
-
-![1D interpolation](imgPres/TS_1D_interp.png){height=35%}
-
-![Gaussian Process interpolation](imgPres/TS_GP_interp.png){height=35%}
-
-## Time series - regression
-
-* Regression
-
-## Time series - Trend and seasonal components
-\columnsbegin
-\column{.5\textwidth}
-![additive decomposition](imgPres/additive-decompose.png)
-\column{.5\textwidth} 
-![multiplicative decomposition](imgPres/multiplicative-decompose.png)
-\columnsend
-
-```r
-x_dcp_add <- decompose(x, "additive")
-x_dcp_mul <- decompose(x, "multiplicative")
-```
-[online tutorial](https://anomaly.io/seasonal-trend-decomposition-in-r/)
-
-## Time series - mining and clustering
+## CHECK: Time series - mining and clustering
 
 [Time series mining and clustering](https://rdatamining.wordpress.com/2011/08/23/time-series-analysis-and-mining-with-r/)
 
@@ -391,20 +432,18 @@ x_dcp_mul <- decompose(x, "multiplicative")
 * Clustering
 * Vizualisation (e.g., MDS)
 
+## Time series - Anomaly detection
 
+![anomaly detection](imgPres/TS_anomalydetection.png)
+
+[source](https://github.com/twitter/AnomalyDetection)
 
 
 ## Time series - change detection
 
 ![change detection](imgPres/TS_changedetection.png)
-package [`changepoint`](https://cran.r-project.org/web/packages/changepoint)
 
-- Example: NF-Fisch
-    Plot CP1 against CP2 and CP3: ellipses
-- CD-Experiment
-- Gaussian process (`GauProMod`)
-- [time-series cleanup](https://cran.r-project.org/web/packages/waterData/vignettes/vignette.pdf)
-- [time-series](http://www.css.cornell.edu/faculty/dgr2/teach/R/R_ts.pdf)
+package [`changepoint`](https://cran.r-project.org/web/packages/changepoint){ width=50%}
 
 
 
@@ -442,7 +481,7 @@ package [`changepoint`](https://cran.r-project.org/web/packages/changepoint)
 - manipulation raster
 - manipulation feature 
 - raster interpolation:
-    - book: R_Applied Spatial Data Analysis with R.pdf (chap. 8, 8.11)
+
 
 **Still missing**
 
@@ -457,25 +496,9 @@ package [`changepoint`](https://cran.r-project.org/web/packages/changepoint)
 
 \columnsend
 
-## R GIS - DEM processing
-![DEM processing](imgPres/R_GIS01.png)
-
-## R GIS - Feature projection
-[check graticules sf class](http://r-spatial.org/r/2017/01/12/newssf.html)
-
-![Feature projection](imgPres/R_GIS_projection.png)
-
-## R GIS - Maps (1)
-![switzerland regional demographics](imgPres/demo/R_as_a_GIS.png)
-[link](https://timogrossenbacher.ch/2016/12/beautiful-thematic-maps-with-ggplot2-only/)
-
-
-## R GIS - Map (2)
-![SF Crime Map](imgPres/map_SF_Crime2014.png)
-[link](http://sharpsightlabs.com/blog/mapping-san-francisco-crime/)
-
 ## R GIS -  Spatial interpolation
 Raster interpolation
+    - check book R_Applied Spatial Data Analysis with R.pdf (chap. 8, 8.11)
 \columnsbegin
 \column{.4\textwidth}
 Adapted from [here](http://rspatial.org/analysis/rst/4-interpolation.html) and [here](https://mgimond.github.io/Spatial/interpolation-in-r.html#st-order-polynomial-fit)
@@ -484,9 +507,36 @@ Adapted from [here](http://rspatial.org/analysis/rst/4-interpolation.html) and [
 ![raster interpolation](imgPres/GIS_spatial_interp.png)
 \columnsend
 
+## R GIS - DEM processing
+make a 4-4 pictures !!
+![DEM processing](imgPres/R_GIS01.png)
+
+## R GIS - 3D raster visualisation
+TODO
+
+## R GIS - Feature projection
+[check graticules sf class](http://r-spatial.org/r/2017/01/12/newssf.html)
+
+![Feature projection](imgPres/R_GIS_projection.png)
+
+## R GIS - Maps (1)
+
+![switzerland regional demographics](imgPres/demo/R_as_a_GIS.png)
+
+[link](https://timogrossenbacher.ch/2016/12/beautiful-thematic-maps-with-ggplot2-only/)
 
 
-See also
+## R GIS - Map (2)
+
+![SF Crime Map](imgPres/map_SF_Crime2014.png)
+
+[link](http://sharpsightlabs.com/blog/mapping-san-francisco-crime/)
+
+
+
+
+See also:
+
 - [`ipdw` Spatial Interpolation via Inverse Path Distance Weighting](https://cran.r-project.org/web/packages/ipdw/vignettes/ipdw2.html)
 - [check that](https://mgimond.github.io/Spatial/interpolation-in-r.html)
 
@@ -496,7 +546,7 @@ R package for airborne LiDAR data manipulation and visualisation for forestry ap
 [lidR](https://github.com/Jean-Romain/lidR)
 
 
-## R GIS - making and using bathymetric maps in R with `marmap`
+## R GIS - making and using bathymetric maps in R with `marmap` pakage
 [link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3760912/)
 
 
@@ -513,18 +563,19 @@ R package for airborne LiDAR data manipulation and visualisation for forestry ap
     - [check `EBImage` vignettes](https://www.bioconductor.org/packages/3.7/bioc/vignettes/EBImage/inst/doc/EBImage-introduction.html)
 
 ## Image analysis and processing
-Example: package `imager`
+Example: `imager` package
  ![image processing](imgPres/image_processing.png)
 
 
-
 ## GPR data processing `RGPR` (1)
-![GPR data processing](imgPres/GPR_processing01.png)    
+![GPR data processing](imgPres/GPR_processing02.png)
+
+[`RGPR` package](https://github.com/emanuelhuber/RGPR)
+
+[online tutorial](http://emanuelhuber.github.io/RGPR/)
 
 ## GPR data processing `RGPR` (2)
-![GPR data processing](imgPres/GPR_processing02.png)
-[package](https://github.com/emanuelhuber/RGPR)
-[tutorial](http://emanuelhuber.github.io/RGPR/)
+![GPR data processing](imgPres/GPR_processing01.png)    
 
 ## Seismic data
 - [seimic data analysis and processing](http://mazamascience.com/Classes/IRIS_2015/)
@@ -576,6 +627,10 @@ Package [`airGR`](https://cran.r-project.org/web/packages/airGR/index.html), see
 Package [`airGR`](https://cran.r-project.org/web/packages/airGR/index.html), see [companion website](https://odelaigue.github.io/airGR/index.html)
 
 ![](imgPres/airGR.png)
+
+## physically based lumped model
+
+simulate groundwater fluctuations in response to precipitation and pumping: [package ambhasGW](https://cran.r-project.org/package=ambhasGW)  [Sekhar et al. (2017)](www.mdpi.com/2071-1050/10/1/26/pdf)
     
 ## Groundwater head interpolation
 package `GauProMod`: Gaussian process (Kriging) with constraints on boundaries
@@ -623,118 +678,126 @@ Bacteria concentration as a function of grid size
 
 ![bacteria concentration](imgPres/gwModBac_concentration_2.png)
 
+Other applications:
+
+* uncertainty quantification (MCMC)
+* sensitivity analysis
+* teaching
+
 \columnsend
 
+## OpenFOAM - Stochastic simulation 
 
-## physically based lumped model
-
-simulate groundwater fluctuations in response to precipitation and pumping: [package ambhasGW](https://cran.r-project.org/package=ambhasGW)  [Sekhar et al. (2017)](www.mdpi.com/2071-1050/10/1/26/pdf)
 
 
 
 
 # Reporting
 
-## publication-quality figures (see also package `ggplot2`)
-Either:
-
+## Ressources - reporting
+Two philosophies: 
 * `ggplot` and `ggplot2` and theirs cousins
-* or base `graphics`, `plot3D`
+* or base `graphics`, `plot3D`, etc.
+
+3D plots:
+* `rgl` for 3D interactive plots (based on OpenGL)
+* `rasterVis`  for 3D interactive plots of raster (based on OpenGL)
+* `plot3D` for 3D static plots
 
 
-* 3D interactive plot with `rgl` (based on OpenGL)
+## publication-quality figures (see also package `ggplot2`)
+
+See R-graph gallery
+
+\columnsbegin
+\column{.6\textwidth}
+### large graphics choice
+
+* 2D and 3D plots
+* static and interactive plots
+* 3D interactive plots with `rgl` (based on OpenGL)
     ```r
     library(rgl)
     demo(abundance) 
     ```
     ![rgl_demo](imgPres/rgl_demo.png){ width=60% }
 
-- Report/presentation/book: HTML/PDF (packages `RMarkdown` and `knitr`)
+\column{.4\textwidth} 
+
+### Export
+* png, jpeg, gif
+* pdf
+* svg
+* html (3D)
+* latex (?)
+
+\columnsend
+
+    
+    
+    
+## Report, presentation, book
+
+[`bookdown`](https://cran.r-project.org/web/packages/bookdown/index.html)
+
+Report/presentation/book: 
+HTML/PDF (packages `RMarkdown` and `knitr`)
+
+## Web applications
+
 - interactive web apps (package `shiny`)
-- R package (code and/or data)
+
+## R package
+
+- combine several codes in a package
+- include data in the package
+
+## Interactive R teaching modules
 - R can create interactive teaching modules: You can do it in the console with `swirl` or on the web with `Datamind`.
 
 
-# Check
-
-## check
-> In short, pair-wise x-y plots
-were computed between the average baselines of all FCM and
-sensor parameters for a first visual observation of any apparent
-correlations. The pair-wise correlations between the full base-
-lines of all parameters were then quantified by the computation
-of Pearson’s correlation coefficients (PCC, linear relationship)
-and Spearman’s rank correlation coefficients (monotonic rela-
-tionship) after standardization of the FCM and sensor data sets
-(see Section 8 in supplementary information). The significance
-of the correlations was assessed by the computation of p-values
-at 95% confidence level. The pair-wise coefficients were displayed
-in a heat map for efficient representation of the gradients in pos-
-itive and inverse correlations between parameters, and for rapid
-identification of the pre-dominant correlations. In this heat map,
-the parameters were reordered by hierarchical clustering using the
-Ward algorithm (see Section 8 in supplementary information).
-The additional R packages Vegan (Oksanen et al., 2009), Heatplus
-(Ploner, 2011), and Heatmap.plus (Day, 2007) were used to these
-ends.
-[TP1 Basellandschaft](https://www.baselland.ch/politik-und-behorden/direktionen/bau-und-umweltschutzdirektion/umweltschutz-energie/wasser/wasserversorgung/publikationen/downloads/tp1-karstsysteme.pdf)
-
-> Online flow cytometry measurements were linearly interpolated and then sampled at equal time intervals (15-minutes) using the "approx()" command of the statistical software R39. This was to adjust for minor deviations from the 15-minutes sampling interval in the original data set...
-
-> ...The interpolated time series was then decomposed into a "trend component" (aperiodic dynamic), a "seasonality component" (periodic dynamic; R-code based terminology not related to seasons of the year), and a "remainder component" (noise and dynamics not accounted for by the above two components) using the "stl()" command...
-
-[Nature](https://www.nature.com/articles/srep38462)
-
-
-> Understand what you are doing!
-
-check [check](http://uribo.github.io/rpkg_showcase/date_and_time/zoo.html)
-
-
-
-# Great tool for coding, reporting and code maintaining
+# Tools
 
 ## RStudio
+* code, figures (export), help, etc.
 * package creation and development
-* reporting with Rmarkdown
+* report (R markdown)
 
 
-## ![](imgPres/input/git-logo.png){height=32} & ![](imgPres/input/github-logo.png){height=32}
+## Git & Github
 
-git = a free and open source distributed version control system
+### git ![](imgPres/input/git-logo.png){height=32}
+a free and open source distributed version control system
 
-github =  a web-based hosting service for version control using git
+### github ![](imgPres/input/github-logo.png){height=32}
+
+
+\columnsbegin
+\column{.6\textwidth}
+
+a web-based hosting service for version control using git
+
+![github2](imgPres/input/distributed-vc.png){width=60%}
+
+\column{.4\textwidth} 
+
+Github public/private repository:
+
+* host code with version contral
+* several branches (develop)
+* wiki
+* project board (task management)
+* host project website
+
+\columnsend
+
+
 
 <!-- > github = Facebook for geeks. Instead of uploading videos of your cat, you upload software.
 – *Wired Magazine* -->
 
 
-![github2](imgPres/input/distributed-vc.png){width=60%}
-
-
-
-
-> Open source means everyone can see my stupid mistakes (Karl Broman)
-
-> Version control means everyone can see every stupid mistake I’ve ever made (Karl Broman)
- 
-
-## Reproducible research (1)
-
-> Karl -- this is very interesting ,
-> however you used an old version of
-> the data (n=143 rather than n=226).
->
-> I'm really sorry you did all that
-> work on the incomplete dataset.
-> 
-> Bruce
-
-from Karl Broman
-
-
-
-## Reproducible research (2)
+## Reproducible research 
 from Karl Broman
 
 0. Separate the raw data from everything (and don't modify them)
@@ -747,4 +810,13 @@ from Karl Broman
 7. Use version control (git/GitHub), no more "really_true_final_2EH5b.doc"
 8. Pick a license, any license   
     
+<!--
+> Understand what you are doing!
+
+> Open source means everyone can see my stupid mistakes (Karl Broman)
+
+> Version control means everyone can see every stupid mistake I’ve ever made (Karl Broman)
+ -->
  
+ 
+# What's next?

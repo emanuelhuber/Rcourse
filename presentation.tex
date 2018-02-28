@@ -174,16 +174,18 @@
   \item
     Overview of R
   \item
-    potential use for AUG-group
+    R show case: potential use for AUG-group\\
   \end{enumerate}
 \item
-  Talk 2: Some important concept on R language
+  Talk 2: R language - some important concepts
 \end{itemize}
 
 \begin{block}{Resources}
 
 \begin{itemize}
 \tightlist
+\item
+  presentations on P:/RKurs
 \item
   for each task (on \url{https://emanuelhuber.github.io/Rcourse/}
 
@@ -215,7 +217,7 @@ of Electrical and Electronics Engineers ranking}
 
 \end{frame}
 
-\begin{frame}{Why R is so popular}
+\begin{frame}{Why R is so popular?}
 
 \begin{itemize}
 \tightlist
@@ -226,7 +228,7 @@ of Electrical and Electronics Engineers ranking}
 \item
   large community
 \item
-  many packages available that are documented (help files + vignette)
+  many packages available that are documented (help files + vignettes)
 \item
   can link C, C++, Fortran code
 \item
@@ -393,7 +395,7 @@ package\strut
     data transformation cheat sheet}
   \end{itemize}
 \item
-  \textbf{Tutorials/book}
+  \textbf{Vignettes/Tutorials/book}
 
   \begin{itemize}
   \tightlist
@@ -404,8 +406,8 @@ package\strut
     \href{https://onepager.togaware.com/DataO.pdf}{Hands-On Data Science
     with R: Data Preparation}
   \item
-    \href{https://cran.r-project.org/web/packages/dplyr/index.html}{check
-    \texttt{dplyr}-vignettes}
+    \href{https://cran.r-project.org/web/packages/dplyr/index.html}{\texttt{dplyr}
+    vignettes}
   \item
     \href{https://rstudio-pubs-static.s3.amazonaws.com/74603_76cd14d5983f47408fdf0b323550b846.html}{Tutorial:
     Regular Expressions in R}
@@ -425,8 +427,8 @@ package\strut
 \begin{itemize}
 \item
   rename variables: \texttt{Head}, \texttt{RIV\_head},
-  \texttt{324/head}, \texttt{head}, \texttt{HEAD} -\textgreater{}
-  \texttt{head}
+  \texttt{324/head}, \texttt{head}, \texttt{HEAD} in
+  \textbf{\texttt{head}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -464,12 +466,25 @@ package\strut
 \columnsbegin
 \column{.7\textwidth}
 \includegraphics{imgPres/data_cleaning_dendrogram.png}
-\column{.3\textwidth} \textbf{detect typo errors} - distance between
-strings - dendrogram visualisation - partial string matching \columnsend
+\column{.3\textwidth}
+
+\textbf{detect typo errors}
+
+\begin{itemize}
+\tightlist
+\item
+  distance between strings
+\item
+  dendrogram visualisation
+\item
+  partial string matching
+\end{itemize}
+
+\columnsend
 
 \end{frame}
 
-\begin{frame}[fragile]{Resources - data shaping}
+\begin{frame}[fragile]{Resources - Data shaping}
 
 \begin{itemize}
 \tightlist
@@ -504,7 +519,7 @@ strings - dendrogram visualisation - partial string matching \columnsend
 
 \end{frame}
 
-\begin{frame}[fragile]{Data shaping 1 (tidy data)}
+\begin{frame}[fragile]{Data shaping}
 
 \columnsbegin
 \column{.45\textwidth} ``Messy'' data
@@ -534,7 +549,7 @@ Tidy data
 \end{Highlighting}
 \end{Shaded}
 
-reverse process possible
+reverse process possible with \texttt{tidyr::gather()}
 
 \end{frame}
 
@@ -580,7 +595,29 @@ processing}\label{data-analysis-and-processing}
 
 \end{frame}
 
-\begin{frame}{Sensitivity analysis}
+\begin{frame}{check}
+
+\begin{quote}
+In short, pair-wise x-y plots were computed between the average
+baselines of all FCM and sensor parameters for a first visual
+observation of any apparent correlations. The pair-wise correlations
+between the full base- lines of all parameters were then quantified by
+the computation of Pearson's correlation coefficients (PCC, linear
+relationship) and Spearman's rank correlation coefficients (monotonic
+rela- tionship) after standardization of the FCM and sensor data sets
+(see Section 8 in supplementary information). The significance of the
+correlations was assessed by the computation of p-values at 95\%
+confidence level. The pair-wise coefficients were displayed in a heat
+map for efficient representation of the gradients in pos- itive and
+inverse correlations between parameters, and for rapid identification of
+the pre-dominant correlations. In this heat map, the parameters were
+reordered by hierarchical clustering using the Ward algorithm (see
+Section 8 in supplementary information). The additional R packages Vegan
+(Oksanen et al., 2009), Heatplus (Ploner, 2011), and Heatmap.plus (Day,
+2007) were used to these ends.
+\href{https://www.baselland.ch/politik-und-behorden/direktionen/bau-und-umweltschutzdirektion/umweltschutz-energie/wasser/wasserversorgung/publikationen/downloads/tp1-karstsysteme.pdf}{TP1
+Basellandschaft}
+\end{quote}
 
 \end{frame}
 
@@ -619,31 +656,46 @@ processing}\label{data-analysis-and-processing}
     to deal with date and time: \texttt{lubridate} cheat sheet}
   \end{itemize}
 \item
-  \textbf{Tutorials/book}
+  \textbf{Vignette/tutorials/book}
 
   \begin{itemize}
   \tightlist
   \item
-    \href{https://cran.r-project.org/web/packages/xts/index.html}{check
-    \texttt{xts} vignettes}
+    \href{https://cran.r-project.org/web/packages/xts/index.html}{\texttt{xts}
+    vignettes}
   \item
-    \href{https://cran.r-project.org/web/packages/zoo/index.html}{check
-    \texttt{zoo} vignettes}
+    \href{https://cran.r-project.org/web/packages/zoo/index.html}{\texttt{zoo}
+    vignettes}
   \item
     \href{http://vita.had.co.nz/papers/lubridate.pdf}{Dates and Times
     Made Easy with \texttt{lubridate}}
   \end{itemize}
 \end{itemize}
 
-Check package for time-series processing:
+See also
 
 \begin{itemize}
 \tightlist
 \item
-  pracma
+  {[}pracma{]}((\url{https://cran.r-project.org/web/packages/pracma/index.html})
+  for
 \item
-  signal
+  {[}signal{]}((\url{https://cran.r-project.org/web/packages/signal/index.html})
+  for
+\item
+  \href{http://uribo.github.io/rpkg_showcase/date_and_time/zoo.html}{check}
+\item
+  Filling in missing values?
 \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Time series - Dynamic visualisation}
+
+Dynamic time series visualisation with package
+\href{https://cran.r-project.org/web/packages/dygraph/index.html}{\texttt{dygraph}}
+
+\includegraphics{imgPres/dygraph.png}
 
 \end{frame}
 
@@ -651,13 +703,6 @@ Check package for time-series processing:
 
 \begin{itemize}
 \tightlist
-\item
-  Import function (?)
-\item
-  Detect and remove anomalies in time-series Application: remove
-  anomalies and estimate true values
-  \includegraphics{imgPres/TS_anomalydetection.png}
-  \href{https://github.com/twitter/AnomalyDetection}{source}
 \item
   fill in missing values (interpolation)
 \item
@@ -672,29 +717,110 @@ Check package for time-series processing:
   \end{itemize}
 \end{itemize}
 
+\begin{quote}
+Online flow cytometry measurements were linearly interpolated and then
+sampled at equal time intervals (15-minutes) using the ``approx()''
+command of the statistical software R39. This was to adjust for minor
+deviations from the 15-minutes sampling interval in the original data
+set\ldots{}
+\end{quote}
+
+\href{https://www.nature.com/articles/srep38462}{Nature}
+
 \end{frame}
 
-\begin{frame}[fragile]{Time series - Dynamic visualisation}
+\begin{frame}{Time series - Interpolation}
 
-Dynamic time series visualisation with package
-\href{https://cran.r-project.org/web/packages/dygraph/index.html}{\texttt{dygraph}}
+\includegraphics[height=0.35000\textwidth]{imgPres/TS_1D_interp.png}
 
-\includegraphics{imgPres/dygraph.png}
+\includegraphics[height=0.35000\textwidth]{imgPres/TS_GP_interp.png}
 
 \end{frame}
 
-\begin{frame}[fragile]{Time series - Visualisation}
+\begin{frame}{Time series - statistics}
 
-merci MM!
+\begin{itemize}
+\tightlist
+\item
+  Daily, monthly, yearly values (cf.~book: Analysis of ecological data
+  with R)
+\item
+  Auto-correlation function (ACF) and Cross-correlation function (CCF)
+  See ARIMA model
+  \href{https://www.analyticsvidhya.com/blog/2015/12/complete-tutorial-time-series-modeling/}{tutorial},
+  \href{http://a-little-book-of-r-for-time-series.readthedocs.io/en/latest/src/timeseries.html}{tutorial2}
+\item
+  empirical cumulative distribution function
+\end{itemize}
 
-Import of groundwater head data from FEFLOW
+\end{frame}
 
-\texttt{P:/RKurs/...}
+\begin{frame}{Time series - spectral analysis}
+
+\begin{itemize}
+\item
+  Fourier
+\item
+  SSA
+\item
+  ?
+\item
+  wavelet analysis
+\item
+  impulse response function: Check RRAWFLOW package:
+  \href{https://sd.water.usgs.gov/projects/RRAWFLOW/RRAWFLOW.html}{rrawflow
+  website}
+\item
+  Example: NF-Fisch Plot CP1 against CP2 and CP3: ellipses
+\item
+  CD-Experiment
+\item
+  \href{https://cran.r-project.org/web/packages/waterData/vignettes/vignette.pdf}{time-series
+  cleanup}
+\item
+  \href{http://www.css.cornell.edu/faculty/dgr2/teach/R/R_ts.pdf}{time-series}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Time series - regression}
+
+\begin{itemize}
+\tightlist
+\item
+  Regression
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Time series - Trend and seasonal components}
+
+\columnsbegin
+\column{.5\textwidth} \includegraphics{imgPres/additive-decompose.png}
+\column{.5\textwidth}
+\includegraphics{imgPres/multiplicative-decompose.png} \columnsend
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x_dcp_add <-}\StringTok{ }\KeywordTok{decompose}\NormalTok{(x, }\StringTok{"additive"}\NormalTok{)}
+\NormalTok{x_dcp_mul <-}\StringTok{ }\KeywordTok{decompose}\NormalTok{(x, }\StringTok{"multiplicative"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\href{https://anomaly.io/seasonal-trend-decomposition-in-r/}{online
+tutorial}
+
+\end{frame}
+
+\begin{frame}{Time series - Import FEFLOW data}
+
 \includegraphics{imgPres/time_series_head_analysis01.png}
 
+source: MM
+
 \end{frame}
 
-\begin{frame}{Time series - Simulated vs observed}
+\begin{frame}{Time series - FEFLOW: Simulated vs observed}
 
 \columnsbegin
 \column{.5\textwidth}
@@ -704,13 +830,14 @@ Import of groundwater head data from FEFLOW
 
 \end{frame}
 
-\begin{frame}{Time series - Goodness-of-fit}
+\begin{frame}{Time series - FEFLOW: Goodness-of-fit}
 
 \includegraphics{imgPres/time_series_head_analysis04.png}
 
 \end{frame}
 
-\begin{frame}{Time series - Residual visualisation \emph{à la GMS}}
+\begin{frame}{Time series - FEFLOW: Residual visualisation \emph{à la
+GMS}}
 
 \columnsbegin
 \column{.4\textwidth} \includegraphics{imgPres/ts_residuals.png}
@@ -747,86 +874,7 @@ Import of groundwater head data from FEFLOW
 
 \end{frame}
 
-\begin{frame}{Time series - statistics}
-
-\begin{itemize}
-\tightlist
-\item
-  Daily, monthly, yearly values (cf.~book: Analysis of ecological data
-  with R)
-\item
-  Auto-correlation function (ACF) and Cross-correlation function (CCF)
-  See ARIMA model
-  \href{https://www.analyticsvidhya.com/blog/2015/12/complete-tutorial-time-series-modeling/}{tutorial},
-  \href{http://a-little-book-of-r-for-time-series.readthedocs.io/en/latest/src/timeseries.html}{tutorial2}
-\item
-  empirical cumulative distribution function
-\end{itemize}
-
-\end{frame}
-
-\begin{frame}{Time series - spectral analysis}
-
-\begin{itemize}
-\tightlist
-\item
-  Fourier
-\item
-  SSA
-\item
-  ?
-\item
-  wavelet analysis
-\end{itemize}
-
-\end{frame}
-
-\begin{frame}{Time series - impulse response function}
-
-Check RRAWFLOW package
-\href{https://sd.water.usgs.gov/projects/RRAWFLOW/RRAWFLOW.html}{rrawflow
-website}
-
-\end{frame}
-
-\begin{frame}{Time series - Interpolation}
-
-\includegraphics[height=0.35000\textwidth]{imgPres/TS_1D_interp.png}
-
-\includegraphics[height=0.35000\textwidth]{imgPres/TS_GP_interp.png}
-
-\end{frame}
-
-\begin{frame}{Time series - regression}
-
-\begin{itemize}
-\tightlist
-\item
-  Regression
-\end{itemize}
-
-\end{frame}
-
-\begin{frame}[fragile]{Time series - Trend and seasonal components}
-
-\columnsbegin
-\column{.5\textwidth} \includegraphics{imgPres/additive-decompose.png}
-\column{.5\textwidth}
-\includegraphics{imgPres/multiplicative-decompose.png} \columnsend
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{x_dcp_add <-}\StringTok{ }\KeywordTok{decompose}\NormalTok{(x, }\StringTok{"additive"}\NormalTok{)}
-\NormalTok{x_dcp_mul <-}\StringTok{ }\KeywordTok{decompose}\NormalTok{(x, }\StringTok{"multiplicative"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\href{https://anomaly.io/seasonal-trend-decomposition-in-r/}{online
-tutorial}
-
-\end{frame}
-
-\begin{frame}{Time series - mining and clustering}
+\begin{frame}{CHECK: Time series - mining and clustering}
 
 \href{https://rdatamining.wordpress.com/2011/08/23/time-series-analysis-and-mining-with-r/}{Time
 series mining and clustering}
@@ -843,25 +891,20 @@ series mining and clustering}
 
 \end{frame}
 
+\begin{frame}{Time series - Anomaly detection}
+
+\includegraphics{imgPres/TS_anomalydetection.png}
+
+\href{https://github.com/twitter/AnomalyDetection}{source}
+
+\end{frame}
+
 \begin{frame}[fragile]{Time series - change detection}
 
-\includegraphics{imgPres/TS_changedetection.png} package
-\href{https://cran.r-project.org/web/packages/changepoint}{\texttt{changepoint}}
+\includegraphics{imgPres/TS_changedetection.png}
 
-\begin{itemize}
-\tightlist
-\item
-  Example: NF-Fisch Plot CP1 against CP2 and CP3: ellipses
-\item
-  CD-Experiment
-\item
-  Gaussian process (\texttt{GauProMod})
-\item
-  \href{https://cran.r-project.org/web/packages/waterData/vignettes/vignette.pdf}{time-series
-  cleanup}
-\item
-  \href{http://www.css.cornell.edu/faculty/dgr2/teach/R/R_ts.pdf}{time-series}
-\end{itemize}
+package
+\href{https://cran.r-project.org/web/packages/changepoint}{\texttt{changepoint}}
 
 \end{frame}
 
@@ -957,12 +1000,6 @@ is a GIS software} (sp, rgeos, raster, rgdal) see also \texttt{sf} :
   manipulation feature
 \item
   raster interpolation:
-
-  \begin{itemize}
-  \tightlist
-  \item
-    book: R\_Applied Spatial Data Analysis with R.pdf (chap. 8, 8.11)
-  \end{itemize}
 \end{itemize}
 
 \textbf{Still missing}
@@ -995,9 +1032,28 @@ is a GIS software} (sp, rgeos, raster, rgdal) see also \texttt{sf} :
 
 \end{frame}
 
+\begin{frame}{R GIS - Spatial interpolation}
+
+Raster interpolation - check book R\_Applied Spatial Data Analysis with
+R.pdf (chap. 8, 8.11) \columnsbegin
+\column{.4\textwidth} Adapted from
+\href{http://rspatial.org/analysis/rst/4-interpolation.html}{here} and
+\href{https://mgimond.github.io/Spatial/interpolation-in-r.html\#st-order-polynomial-fit}{here}
+\includegraphics{imgPres/GIS_raster_interp_data.png}
+\column{.6\textwidth} \includegraphics{imgPres/GIS_spatial_interp.png}
+\columnsend
+
+\end{frame}
+
 \begin{frame}{R GIS - DEM processing}
 
-\includegraphics{imgPres/R_GIS01.png}
+make a 4-4 pictures !! \includegraphics{imgPres/R_GIS01.png}
+
+\end{frame}
+
+\begin{frame}{R GIS - 3D raster visualisation}
+
+TODO
 
 \end{frame}
 
@@ -1013,32 +1069,28 @@ class}
 \begin{frame}{R GIS - Maps (1)}
 
 \includegraphics{imgPres/demo/R_as_a_GIS.png}
+
 \href{https://timogrossenbacher.ch/2016/12/beautiful-thematic-maps-with-ggplot2-only/}{link}
 
 \end{frame}
 
-\begin{frame}{R GIS - Map (2)}
+\begin{frame}[fragile]{R GIS - Map (2)}
 
 \includegraphics{imgPres/map_SF_Crime2014.png}
+
 \href{http://sharpsightlabs.com/blog/mapping-san-francisco-crime/}{link}
 
-\end{frame}
+See also:
 
-\begin{frame}[fragile]{R GIS - Spatial interpolation}
-
-Raster interpolation \columnsbegin
-\column{.4\textwidth} Adapted from
-\href{http://rspatial.org/analysis/rst/4-interpolation.html}{here} and
-\href{https://mgimond.github.io/Spatial/interpolation-in-r.html\#st-order-polynomial-fit}{here}
-\includegraphics{imgPres/GIS_raster_interp_data.png}
-\column{.6\textwidth} \includegraphics{imgPres/GIS_spatial_interp.png}
-\columnsend
-
-See also -
-\href{https://cran.r-project.org/web/packages/ipdw/vignettes/ipdw2.html}{\texttt{ipdw}
-Spatial Interpolation via Inverse Path Distance Weighting} -
-\href{https://mgimond.github.io/Spatial/interpolation-in-r.html}{check
-that}
+\begin{itemize}
+\tightlist
+\item
+  \href{https://cran.r-project.org/web/packages/ipdw/vignettes/ipdw2.html}{\texttt{ipdw}
+  Spatial Interpolation via Inverse Path Distance Weighting}
+\item
+  \href{https://mgimond.github.io/Spatial/interpolation-in-r.html}{check
+  that}
+\end{itemize}
 
 \end{frame}
 
@@ -1050,7 +1102,7 @@ forestry application \href{https://github.com/Jean-Romain/lidR}{lidR}
 \end{frame}
 
 \begin{frame}{R GIS - making and using bathymetric maps in R with
-\texttt{marmap}}
+\texttt{marmap} pakage}
 
 \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3760912/}{link}
 
@@ -1091,22 +1143,24 @@ forestry application \href{https://github.com/Jean-Romain/lidR}{lidR}
 
 \begin{frame}[fragile]{Image analysis and processing}
 
-Example: package \texttt{imager}
+Example: \texttt{imager} package
 \includegraphics{imgPres/image_processing.png}
 
 \end{frame}
 
-\begin{frame}{GPR data processing \texttt{RGPR} (1)}
+\begin{frame}[fragile]{GPR data processing \texttt{RGPR} (1)}
 
-\includegraphics{imgPres/GPR_processing01.png}
+\includegraphics{imgPres/GPR_processing02.png}
+
+\href{https://github.com/emanuelhuber/RGPR}{\texttt{RGPR} package}
+
+\href{http://emanuelhuber.github.io/RGPR/}{online tutorial}
 
 \end{frame}
 
 \begin{frame}{GPR data processing \texttt{RGPR} (2)}
 
-\includegraphics{imgPres/GPR_processing02.png}
-\href{https://github.com/emanuelhuber/RGPR}{package}
-\href{http://emanuelhuber.github.io/RGPR/}{tutorial}
+\includegraphics{imgPres/GPR_processing01.png}
 
 \end{frame}
 
@@ -1229,6 +1283,15 @@ website}
 
 \end{frame}
 
+\begin{frame}{physically based lumped model}
+
+simulate groundwater fluctuations in response to precipitation and
+pumping: \href{https://cran.r-project.org/package=ambhasGW}{package
+ambhasGW} \href{www.mdpi.com/2071-1050/10/1/26/pdf}{Sekhar et al.
+(2017)}
+
+\end{frame}
+
 \begin{frame}[fragile]{Groundwater head interpolation}
 
 package \texttt{GauProMod}: Gaussian process (Kriging) with constraints
@@ -1298,33 +1361,54 @@ Bacteria concentration as a function of grid size
 
 \includegraphics{imgPres/gwModBac_concentration_2.png}
 
+Other applications:
+
+\begin{itemize}
+\tightlist
+\item
+  uncertainty quantification (MCMC)
+\item
+  sensitivity analysis
+\item
+  teaching
+\end{itemize}
+
 \columnsend
 
 \end{frame}
 
-\begin{frame}{physically based lumped model}
-
-simulate groundwater fluctuations in response to precipitation and
-pumping: \href{https://cran.r-project.org/package=ambhasGW}{package
-ambhasGW} \href{www.mdpi.com/2071-1050/10/1/26/pdf}{Sekhar et al.
-(2017)}
+\begin{frame}{OpenFOAM - Stochastic simulation}
 
 \end{frame}
 
 \section{Reporting}\label{reporting}
 
+\begin{frame}[fragile]{Ressources - reporting}
+
+Two philosophies: * \texttt{ggplot} and \texttt{ggplot2} and theirs
+cousins * or base \texttt{graphics}, \texttt{plot3D}, etc.
+
+3D plots: * \texttt{rgl} for 3D interactive plots (based on OpenGL) *
+\texttt{rasterVis} for 3D interactive plots of raster (based on OpenGL)
+* \texttt{plot3D} for 3D static plots
+
+\end{frame}
+
 \begin{frame}[fragile]{publication-quality figures (see also package
 \texttt{ggplot2})}
 
-Either:
+See R-graph gallery
+
+\columnsbegin
+\column{.6\textwidth} \#\#\# large graphics choice
 
 \begin{itemize}
 \item
-  \texttt{ggplot} and \texttt{ggplot2} and theirs cousins
+  2D and 3D plots
 \item
-  or base \texttt{graphics}, \texttt{plot3D}
+  static and interactive plots
 \item
-  3D interactive plot with \texttt{rgl} (based on OpenGL)
+  3D interactive plots with \texttt{rgl} (based on OpenGL)
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1334,13 +1418,67 @@ Either:
 \end{Shaded}
 
   \includegraphics[width=0.60000\textwidth]{imgPres/rgl_demo.png}
+\end{itemize}
+
+\column{.4\textwidth}
+
+\begin{block}{Export}
+
+\begin{itemize}
+\tightlist
 \item
-  Report/presentation/book: HTML/PDF (packages \texttt{RMarkdown} and
-  \texttt{knitr})
+  png, jpeg, gif
+\item
+  pdf
+\item
+  svg
+\item
+  html (3D)
+\item
+  latex (?)
+\end{itemize}
+
+\columnsend
+
+\end{block}
+
+\end{frame}
+
+\begin{frame}[fragile]{Report, presentation, book}
+
+\href{https://cran.r-project.org/web/packages/bookdown/index.html}{\texttt{bookdown}}
+
+Report/presentation/book: HTML/PDF (packages \texttt{RMarkdown} and
+\texttt{knitr})
+
+\end{frame}
+
+\begin{frame}[fragile]{Web applications}
+
+\begin{itemize}
+\tightlist
 \item
   interactive web apps (package \texttt{shiny})
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{R package}
+
+\begin{itemize}
+\tightlist
 \item
-  R package (code and/or data)
+  combine several codes in a package
+\item
+  include data in the package
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Interactive R teaching modules}
+
+\begin{itemize}
+\tightlist
 \item
   R can create interactive teaching modules: You can do it in the
   console with \texttt{swirl} or on the web with \texttt{Datamind}.
@@ -1348,110 +1486,66 @@ Either:
 
 \end{frame}
 
-\section{Check}\label{check}
-
-\begin{frame}{check}
-
-\begin{quote}
-In short, pair-wise x-y plots were computed between the average
-baselines of all FCM and sensor parameters for a first visual
-observation of any apparent correlations. The pair-wise correlations
-between the full base- lines of all parameters were then quantified by
-the computation of Pearson's correlation coefficients (PCC, linear
-relationship) and Spearman's rank correlation coefficients (monotonic
-rela- tionship) after standardization of the FCM and sensor data sets
-(see Section 8 in supplementary information). The significance of the
-correlations was assessed by the computation of p-values at 95\%
-confidence level. The pair-wise coefficients were displayed in a heat
-map for efficient representation of the gradients in pos- itive and
-inverse correlations between parameters, and for rapid identification of
-the pre-dominant correlations. In this heat map, the parameters were
-reordered by hierarchical clustering using the Ward algorithm (see
-Section 8 in supplementary information). The additional R packages Vegan
-(Oksanen et al., 2009), Heatplus (Ploner, 2011), and Heatmap.plus (Day,
-2007) were used to these ends.
-\href{https://www.baselland.ch/politik-und-behorden/direktionen/bau-und-umweltschutzdirektion/umweltschutz-energie/wasser/wasserversorgung/publikationen/downloads/tp1-karstsysteme.pdf}{TP1
-Basellandschaft}
-\end{quote}
-
-\begin{quote}
-Online flow cytometry measurements were linearly interpolated and then
-sampled at equal time intervals (15-minutes) using the ``approx()''
-command of the statistical software R39. This was to adjust for minor
-deviations from the 15-minutes sampling interval in the original data
-set\ldots{}
-\end{quote}
-
-\begin{quote}
-\ldots{}The interpolated time series was then decomposed into a ``trend
-component'' (aperiodic dynamic), a ``seasonality component'' (periodic
-dynamic; R-code based terminology not related to seasons of the year),
-and a ``remainder component'' (noise and dynamics not accounted for by
-the above two components) using the ``stl()'' command\ldots{}
-\end{quote}
-
-\href{https://www.nature.com/articles/srep38462}{Nature}
-
-\begin{quote}
-Understand what you are doing!
-\end{quote}
-
-check
-\href{http://uribo.github.io/rpkg_showcase/date_and_time/zoo.html}{check}
-
-\end{frame}
-
-\section{Great tool for coding, reporting and code
-maintaining}\label{great-tool-for-coding-reporting-and-code-maintaining}
+\section{Tools}\label{tools}
 
 \begin{frame}{RStudio}
 
 \begin{itemize}
 \tightlist
 \item
+  code, figures (export), help, etc.
+\item
   package creation and development
 \item
-  reporting with Rmarkdown
+  report (R markdown)
 \end{itemize}
 
 \end{frame}
 
-\begin{frame}{\includegraphics[height=0.33333in]{imgPres/input/git-logo.png}
-\& \includegraphics[height=0.33333in]{imgPres/input/github-logo.png}}
+\begin{frame}{Git \& Github}
 
-git = a free and open source distributed version control system
+\begin{block}{git
+\includegraphics[height=0.33333in]{imgPres/input/git-logo.png}}
 
-github = a web-based hosting service for version control using git
+a free and open source distributed version control system
+
+\end{block}
+
+\begin{block}{github
+\includegraphics[height=0.33333in]{imgPres/input/github-logo.png}}
+
+\columnsbegin
+\column{.6\textwidth}
+
+a web-based hosting service for version control using git
 
 \includegraphics[width=0.60000\textwidth]{imgPres/input/distributed-vc.png}
 
-\begin{quote}
-Open source means everyone can see my stupid mistakes (Karl Broman)
-\end{quote}
+\column{.4\textwidth}
 
-\begin{quote}
-Version control means everyone can see every stupid mistake I've ever
-made (Karl Broman)
-\end{quote}
+Github public/private repository:
 
-\end{frame}
+\begin{itemize}
+\tightlist
+\item
+  host code with version contral
+\item
+  several branches (develop)
+\item
+  wiki
+\item
+  project board (task management)
+\item
+  host project website
+\end{itemize}
 
-\begin{frame}{Reproducible research (1)}
+\columnsend
 
-\begin{quote}
-Karl -- this is very interesting , however you used an old version of
-the data (n=143 rather than n=226).
-
-I'm really sorry you did all that work on the incomplete dataset.
-
-Bruce
-\end{quote}
-
-from Karl Broman
+\end{block}
 
 \end{frame}
 
-\begin{frame}{Reproducible research (2)}
+\begin{frame}{Reproducible research}
 
 from Karl Broman
 
@@ -1481,5 +1575,7 @@ from Karl Broman
 \end{enumerate}
 
 \end{frame}
+
+\section{What's next?}\label{whats-next}
 
 \end{document}
