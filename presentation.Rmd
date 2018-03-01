@@ -1,5 +1,5 @@
 ---
-title: "R... for hydrogeologists(?)"
+title: "R, an overview"
 author: "Emanuel Huber"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 header-includes:
@@ -30,17 +30,10 @@ knitr::opts_chunk$set(echo = FALSE, size = 'tiny')
 ## Outline
 
 * Talk 1:
-    1. Overview of R 
-    2. R show case: potential use for AUG-group    
+    1. Why R? 
+    2. R show case (incomplete)    
 * Talk 2: R language - some important concepts
 
-### Resources
-- presentations on P:/RKurs
-- for each task (on [https://emanuelhuber.github.io/Rcourse/](https://emanuelhuber.github.io/Rcourse/)
-    - list of best R-package
-    - cheat sheets
-    - online book/course/tutorial
-- some tutorial on P:/RKurs (including data)
 
 
 
@@ -179,7 +172,9 @@ knitr::opts_chunk$set(echo = FALSE, size = 'tiny')
 ## Data cleaning (2)
 
 \columnsbegin
+
 \column{.7\textwidth}
+
 ![dendrogram](imgPres/data_cleaning_dendrogram.png)
 \column{.3\textwidth} 
 
@@ -236,15 +231,16 @@ reverse process possible with `tidyr::gather()`
 
 ## Data analysis
 * data analysis
-    - statistics: [check](https://www.hydrology.uni-kiel.de/de/mitarbeiter/Statistics)
+    - statistics
     - linear regression
-    - [boxplot](https://cran.r-project.org/web/packages/beanplot/vignettes/beanplot.pdf)
-    - linear regression (p-value, R^2)
-    - PCA (linear relationship)
-    - [cluster analysis](http://www.sthda.com/english/articles/25-cluster-analysis-in-r-practical-guide/111-types-of-clustering-methods-overview-and-quick-start-r-code/)
-         - dendrogram [nice tutorial](http://www.sthda.com/english/wiki/beautiful-dendrogram-visualizations-in-r-5-must-known-methods-unsupervised-machine-learning), [another tutorial](https://rpubs.com/gaston/dendrograms)
-         - k-means algorithm
-
+    - boxplot
+    - pairs-plot
+    - correlation plot
+    - dimensionality reduction (PCA, MDS, CCA, etc.)
+    - cluster analysis
+    
+    
+<!--
 ## check
 > In short, pair-wise x-y plots
 were computed between the average baselines of all FCM and
@@ -266,7 +262,7 @@ The additional R packages Vegan (Oksanen et al., 2009), Heatplus
 (Ploner, 2011), and Heatmap.plus (Day, 2007) were used to these
 ends.
 [TP1 Basellandschaft](https://www.baselland.ch/politik-und-behorden/direktionen/bau-und-umweltschutzdirektion/umweltschutz-energie/wasser/wasserversorgung/publikationen/downloads/tp1-karstsysteme.pdf)
-
+-->
          
 
 ## Time series - resources
@@ -309,6 +305,8 @@ Dynamic time series visualisation with package [`dygraph`](https://cran.r-projec
 
 ![dynamic time series visualisation](imgPres/dygraph.png)
 
+
+<!--
 ## Time series - Import and preparation
 
 * fill in missing values (interpolation)
@@ -319,7 +317,7 @@ Dynamic time series visualisation with package [`dygraph`](https://cran.r-projec
  > Online flow cytometry measurements were linearly interpolated and then sampled at equal time intervals (15-minutes) using the "approx()" command of the statistical software R39. This was to adjust for minor deviations from the 15-minutes sampling interval in the original data set...
 
 [Nature](https://www.nature.com/articles/srep38462)
-
+-->
 
 ## Time series - Interpolation
 
@@ -328,13 +326,29 @@ Dynamic time series visualisation with package [`dygraph`](https://cran.r-projec
 ![Gaussian Process interpolation](imgPres/TS_GP_interp.png){height=35%}
 
 ## Time series - statistics 
+
+
+\columnsbegin
+\column{.45\textwidth}
+
+![acf](imgPres/ts_acf.png)
+![fourier](imgPres/ts_fourier.png)
+\column{.45\textwidth} 
+
+![ccf](imgPres/ts_ccf.png)
+![boxplot monthly](imgPres/ts_boxplot_monthly.png)
+
+\columnsend
+
+<!--
+
 * Daily, monthly, yearly values (cf. book: Analysis of ecological data with R)
 * Auto-correlation function (ACF) and Cross-correlation function (CCF)
     See ARIMA model [tutorial](https://www.analyticsvidhya.com/blog/2015/12/complete-tutorial-time-series-modeling/), [tutorial2](http://a-little-book-of-r-for-time-series.readthedocs.io/en/latest/src/timeseries.html)
 * empirical cumulative distribution function
+-->
 
-
-
+<!--
 ## Time series - spectral analysis 
 * Fourier
 * SSA
@@ -348,11 +362,23 @@ Dynamic time series visualisation with package [`dygraph`](https://cran.r-projec
 - CD-Experiment
 - [time-series cleanup](https://cran.r-project.org/web/packages/waterData/vignettes/vignette.pdf)
 - [time-series](http://www.css.cornell.edu/faculty/dgr2/teach/R/R_ts.pdf)
+-->
 
+## Time series - Regression and smoothing
 
-## Time series - regression
+Regression
 
-* Regression
+![reg](imgPres/ts_regression.png){ width=55% }
+
+Moving average
+
+![ma](imgPres/ts_MA.png){ width=55% }
+
+Smoothing
+
+![ma](imgPres/ts_KS.png){ width=55% }
+
+source: book "Time Series Analysis and Its Applications with R examples"
 
 ## Time series - Trend and seasonal components
 \columnsbegin
@@ -361,10 +387,6 @@ Dynamic time series visualisation with package [`dygraph`](https://cran.r-projec
 \column{.5\textwidth} 
 ![multiplicative decomposition](imgPres/multiplicative-decompose.png)
 \columnsend
-
-<!--
-> ...The interpolated time series was then decomposed into a "trend component" (aperiodic dynamic), a "seasonality component" (periodic dynamic; R-code based terminology not related to seasons of the year), and a "remainder component" (noise and dynamics not accounted for by the above two components) using the "stl()" command...
-[Nature](https://www.nature.com/articles/srep38462) -->
 
 ```r
 x_dcp_add <- decompose(x, "additive")
@@ -423,7 +445,7 @@ source: MM
 
 
 
-
+<!--
 ## CHECK: Time series - mining and clustering
 
 [Time series mining and clustering](https://rdatamining.wordpress.com/2011/08/23/time-series-analysis-and-mining-with-r/)
@@ -431,6 +453,7 @@ source: MM
 * Compute distance between time-series 
 * Clustering
 * Vizualisation (e.g., MDS)
+-->
 
 ## Time series - Anomaly detection
 
@@ -479,22 +502,31 @@ package [`changepoint`](https://cran.r-project.org/web/packages/changepoint){ wi
 **Tool**
 
 - manipulation raster
-- manipulation feature 
-- raster interpolation:
+
+    - raster interpolations
+    - multi-band raster
+    - slope, flow direction, hillshade
+    - ...
+- manipulation feature
+
+    - attribute manipulations
+    - spatial operations
+    - geometric operations
 
 
 **Still missing**
 
 - TIN
-- watershed but 
-    - check [that](https://gis.stackexchange.com/questions/182120/get-rivers-from-a-dem-raster)
-    - check [how to compute flow accumulation](https://gis.stackexchange.com/questions/84309/what-algorithm-is-used-by-arcgis-watershed-tool)
-    - idea: use local structure tensor to compute direction and accumulation....
+- watershed 
 
-
-- download tiles webgis of Italy region
+For an overview: [online book "geocomputation with R"](https://bookdown.org/robinlovelace/geocompr)
 
 \columnsend
+
+<!-- but 
+    - check [that](https://gis.stackexchange.com/questions/182120/get-rivers-from-a-dem-raster)
+    - check [how to compute flow accumulation](https://gis.stackexchange.com/questions/84309/what-algorithm-is-used-by-arcgis-watershed-tool)
+- download tiles webgis of Italy region -->
 
 ## R GIS -  Spatial interpolation
 Raster interpolation
@@ -512,7 +544,17 @@ make a 4-4 pictures !!
 ![DEM processing](imgPres/R_GIS01.png)
 
 ## R GIS - 3D raster visualisation
-TODO
+![3D raster](imgPres/GIS_rasterVis.png)
+
+## R GIS -  LiDAR & bathymetry
+
+[lidR](https://cran.r-project.org/web/packages/lidR/index.htm): a R package for airborne LiDAR data manipulation and visualisation for forestry application ([companion website](https://github.com/Jean-Romain/lidR))
+
+![lidar](imgPres/GIS_lidar.png){width=50%}
+
+[`marmap`](https://cran.r-project.org/web/packages/marmap/index.htm): a R package for making and analysing bathymetric ([article](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3760912/))
+
+![bathy](imgPres/GIS_bathy.png){width=50%}
 
 ## R GIS - Feature projection
 [check graticules sf class](http://r-spatial.org/r/2017/01/12/newssf.html)
@@ -541,13 +583,6 @@ See also:
 - [check that](https://mgimond.github.io/Spatial/interpolation-in-r.html)
 
 
-## R GIS -  LiDAR
-R package for airborne LiDAR data manipulation and visualisation for forestry application
-[lidR](https://github.com/Jean-Romain/lidR)
-
-
-## R GIS - making and using bathymetric maps in R with `marmap` pakage
-[link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3760912/)
 
 
 ## Image analysis and processing - resources
@@ -561,6 +596,7 @@ R package for airborne LiDAR data manipulation and visualisation for forestry ap
     - [check `imager` vignettes](https://cran.r-project.org/web/packages/imager/index.html) 
     - [`imager` project website](https://dahtah.github.io/imager/)
     - [check `EBImage` vignettes](https://www.bioconductor.org/packages/3.7/bioc/vignettes/EBImage/inst/doc/EBImage-introduction.html)
+    - [Online presentation of `EBImage`] vignettes](https://www.bioconductor.org/help/course-materials/2015/BioC2015/BioC2015Oles.html)
 
 ## Image analysis and processing
 Example: `imager` package
@@ -577,11 +613,14 @@ Example: `imager` package
 ## GPR data processing `RGPR` (2)
 ![GPR data processing](imgPres/GPR_processing01.png)    
 
+
+<!--
 ## Seismic data
 - [seimic data analysis and processing](http://mazamascience.com/Classes/IRIS_2015/)
 - [eisis package](https://www.earth-surf-dynam-discuss.net/esurf-2017-75/esurf-2017-75.pdf)
     - [talk](http://www.unc.edu/~leesj/FETCH/GRAB/Vignettes/whyRbeam.pdf)
 
+-->
 
 ## Database 
 - quality control: detect "outliers", bad quality data, errors
@@ -594,29 +633,96 @@ Example: `imager` package
     
 - Regli et al. (2002) Interpretation of drill core and georadar data of coarse gravel deposits [doi:10.1016/S0022-1694(01)00531-5](https://doi.org/10.1016/S0022-1694(01)00531-5)
 
+
+<!--
 ## Misc
 * Package [`rioja`](https://cran.r-project.org/web/packages/rioja/): Functions for the analysis of Quaternary science data, including
 constrained clustering, WA, WAPLS, IKFA, MLRC and MAT transfer
 functions, and stratigraphic diagrams.
-
+-->
 
 
 # Modeling/simulations
 
  
-## Statistical/stochastic models
-- probabilty distribution
-- Gaussian process/Kriging (`RandomFields`): account for correlation
-    - 3D subsurface heterogeneity model
-- point process and marked point process
-    - faults, `CBRDM`
+## Statistical/stochastic models - Probability models
+
+![distribution](imgPres/distribution_chart.png){ width=60% }
+
+Bayesian modelling, MCMC, etc.
+
+see [CRAN Task View: Probability Distributions](https://cran.r-project.org/web/views/Distributions.html)
+
+## Statistical/stochastic models - Gaussian random fields
+package [`RandomFields`](https://cran.r-project.org/web/packages/RandomFields/index.html)
+
+\columnsbegin
+\column{.45\textwidth}
+
+![randomfield1](imgPres/randomfield1.png){ width=80% }
+
+![randomfield2](imgPres/randomfield2.png){ width=80% }
+
+\column{.45\textwidth} 
+
+![randomfield3](imgPres/randomfield3.png){ width=80% }
+
+![randomfield4](imgPres/randomfield4.png){ width=80% }
+
+\columnsend
 
 
+
+## Statistical/stochastic models - Point processes
+see [`spatstat`](https://cran.r-project.org/web/packages/spatstat/index.html)
+
+\columnsbegin
+\column{.45\textwidth}
+
+![](imgPres/mpp_01.png)
+
+![](imgPres/mpp_02.png)
+\column{.45\textwidth} 
+
+![pp03](imgPres/mpp_03.png)
+
+![pp05](imgPres/mpp_05.png)
+
+\columnsend
+
+
+
+## Coarse, braided river deposit model
+
+\columnsbegin
+
+\column{.45\textwidth} 
+![vertical sections](imgPres/06_highAg_section_light.png)
+
+\column{.45\textwidth} 
+![vertical sections](imgPres/06_lowAg_section.png)
+\columnsend
+
+\columnsbegin
+
+\column{.45\textwidth}
+
+![model1](imgPres/07_highAg_HK_light.png)
+
+\column{.45\textwidth} 
+
+![model2](imgPres/07_lowAg_HK_light.png)
+
+\columnsend
+
+[code and tutorial online](https://github.com/emanuelhuber/CBRDM)
 
  
 ## Catchment flow simulation
 * `RRAWFLOW`: Rainfall-Response Aquifer and Watershed Flow Model 
+  [rrawflow website](https://sd.water.usgs.gov/projects/RRAWFLOW/RRAWFLOW.html)
 * `topmodel` and `dynatopmodel` packages
+* [package `ambhasGW`](https://cran.r-project.org/package=ambhasGW) simulates groundwater fluctuations in response to precipitation and pumping:   [Sekhar et al. (2017)](www.mdpi.com/2071-1050/10/1/26/pdf)
 
 ## Catchment flow simulation (1)
 Package [`airGR`](https://cran.r-project.org/web/packages/airGR/index.html), see tutorial on [companion website](https://odelaigue.github.io/airGR/index.html)
@@ -630,7 +736,7 @@ Package [`airGR`](https://cran.r-project.org/web/packages/airGR/index.html), see
 
 ## physically based lumped model
 
-simulate groundwater fluctuations in response to precipitation and pumping: [package ambhasGW](https://cran.r-project.org/package=ambhasGW)  [Sekhar et al. (2017)](www.mdpi.com/2071-1050/10/1/26/pdf)
+
     
 ## Groundwater head interpolation
 package `GauProMod`: Gaussian process (Kriging) with constraints on boundaries
@@ -643,20 +749,28 @@ After [Kuhlman and Igusquiza (2010)](https://doi.org/10.1016/j.jhydrol.2010.01.0
    
 ## Modflow - US-GS reproducible report
 
+**Groundwater-flow model for the Wood River Valley aquifer system, south-central Idaho**
+
+Use R for GIS operation to set up a groundwater model (MODFLOW).
+
+![model usgs](imgPres/wvrModel.png){width=70%}
+
 [github.com/USGS-R/wrv](https://github.com/USGS-R/wrv)
 
-## Modflow - subsurface flow mixing (1)
-personal code based [github.com/USGS-R/wrv](https://github.com/USGS-R/wrv)
+## Modflow/modpath - subsurface flow mixing (1)
+personal code based on [github.com/USGS-R/wrv](https://github.com/USGS-R/wrv)
 ![RMODFLOW - head](imgPres/RMODFLOW_head.png)  
 
-## Modflow - subsurface flow mixing (2)
+## Modflow/modpath - subsurface flow mixing (2)
 ![RMODFLOW - streamlines](imgPres/RMODFLOW_particles.png)   
 
-## Modflow - subsurface flow mixing (3)
+## Modflow/modpath - subsurface flow mixing (3)
 ![RMODFLOW - close-up](imgPres/RMODFLOW_zoom.png)
 
-## Modflow -stochastic simulation (1)
+## Modflow/modpath -stochastic simulation (1)
 (`gwModBac` personal code based on [github.com/USGS-R/wrv](https://github.com/USGS-R/wrv)
+
+
 Groundwater flow simulation and particle tracking to forecast microbial concentration in a drinking water extraction well.
 
 ### Workflow
@@ -686,20 +800,18 @@ Other applications:
 
 \columnsend
 
-## OpenFOAM - Stochastic simulation 
-
-
-
 
 
 # Reporting
 
 ## Ressources - reporting
 Two philosophies: 
+
 * `ggplot` and `ggplot2` and theirs cousins
 * or base `graphics`, `plot3D`, etc.
 
 3D plots:
+
 * `rgl` for 3D interactive plots (based on OpenGL)
 * `rasterVis`  for 3D interactive plots of raster (based on OpenGL)
 * `plot3D` for 3D static plots
@@ -711,20 +823,25 @@ See R-graph gallery
 
 \columnsbegin
 \column{.6\textwidth}
-### large graphics choice
+
+large graphics choice
 
 * 2D and 3D plots
 * static and interactive plots
+
+<!--
 * 3D interactive plots with `rgl` (based on OpenGL)
     ```r
     library(rgl)
     demo(abundance) 
     ```
     ![rgl_demo](imgPres/rgl_demo.png){ width=60% }
+-->
 
 \column{.4\textwidth} 
 
-### Export
+Export
+ 
 * png, jpeg, gif
 * pdf
 * svg
@@ -743,17 +860,28 @@ See R-graph gallery
 Report/presentation/book: 
 HTML/PDF (packages `RMarkdown` and `knitr`)
 
+\columnsbegin
+\column{.7\textwidth}
+![markdown](imgPres/report_markdownchunk.png)
+\column{.3\textwidth} 
+![markdown](imgPres/report_rmarkdownoutputformats.png)
+\columnsend
+
+
+
+
+
 ## Web applications
 
-- interactive web apps (package `shiny`)
+interactive web apps (package `shiny`)
+
+![shiny](imgPres/report_movie-explorer.png){width=70%}
 
 ## R package
 
 - combine several codes in a package
 - include data in the package
 
-## Interactive R teaching modules
-- R can create interactive teaching modules: You can do it in the console with `swirl` or on the web with `Datamind`.
 
 
 # Tools

@@ -1,0 +1,9 @@
+\frametitle{Interactive R teaching modules}
+
+\begin{itemize}
+\tightlist
+\item
+  R can create interactive teaching modules: You can do it in the
+  console with \texttt{swirl} or on the web with \texttt{Datamind}.
+\end{itemize}
+

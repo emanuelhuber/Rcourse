@@ -35,7 +35,7 @@
 }{}
 \newif\ifbibliography
 \hypersetup{
-            pdftitle={R\ldots{} for hydrogeologists(?)},
+            pdftitle={R, an overview},
             pdfauthor={Emanuel Huber},
             colorlinks=true,
             linkcolor=red,
@@ -131,9 +131,9 @@
 \setcounter{secnumdepth}{0}
 \widowpenalties 1 150
 
-\title{R\ldots{} for hydrogeologists(?)}
+\title{R, an overview}
 \author{Emanuel Huber}
-\date{Februar 28, 2018}
+\date{März 01, 2018}
 
 %----- ADD MANU
 \newcommand{\columnsbegin}{\begin{columns}}
@@ -172,37 +172,13 @@
   \def\labelenumi{\arabic{enumi}.}
   \tightlist
   \item
-    Overview of R
+    Why R?
   \item
-    R show case: potential use for AUG-group\\
+    R show case (incomplete)\\
   \end{enumerate}
 \item
   Talk 2: R language - some important concepts
 \end{itemize}
-
-\begin{block}{Resources}
-
-\begin{itemize}
-\tightlist
-\item
-  presentations on P:/RKurs
-\item
-  for each task (on \url{https://emanuelhuber.github.io/Rcourse/}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    list of best R-package
-  \item
-    cheat sheets
-  \item
-    online book/course/tutorial
-  \end{itemize}
-\item
-  some tutorial on P:/RKurs (including data)
-\end{itemize}
-
-\end{block}
 
 \end{frame}
 
@@ -464,7 +440,9 @@ package\strut
 \begin{frame}{Data cleaning (2)}
 
 \columnsbegin
+
 \column{.7\textwidth}
+
 \includegraphics{imgPres/data_cleaning_dendrogram.png}
 \column{.3\textwidth}
 
@@ -566,58 +544,21 @@ processing}\label{data-analysis-and-processing}
   \begin{itemize}
   \tightlist
   \item
-    statistics:
-    \href{https://www.hydrology.uni-kiel.de/de/mitarbeiter/Statistics}{check}
+    statistics
   \item
     linear regression
   \item
-    \href{https://cran.r-project.org/web/packages/beanplot/vignettes/beanplot.pdf}{boxplot}
+    boxplot
   \item
-    linear regression (p-value, R\^{}2)
+    pairs-plot
   \item
-    PCA (linear relationship)
+    correlation plot
   \item
-    \href{http://www.sthda.com/english/articles/25-cluster-analysis-in-r-practical-guide/111-types-of-clustering-methods-overview-and-quick-start-r-code/}{cluster
-    analysis}
-
-    \begin{itemize}
-    \tightlist
-    \item
-      dendrogram
-      \href{http://www.sthda.com/english/wiki/beautiful-dendrogram-visualizations-in-r-5-must-known-methods-unsupervised-machine-learning}{nice
-      tutorial}, \href{https://rpubs.com/gaston/dendrograms}{another
-      tutorial}
-    \item
-      k-means algorithm
-    \end{itemize}
+    dimensionality reduction (PCA, MDS, CCA, etc.)
+  \item
+    cluster analysis
   \end{itemize}
 \end{itemize}
-
-\end{frame}
-
-\begin{frame}{check}
-
-\begin{quote}
-In short, pair-wise x-y plots were computed between the average
-baselines of all FCM and sensor parameters for a first visual
-observation of any apparent correlations. The pair-wise correlations
-between the full base- lines of all parameters were then quantified by
-the computation of Pearson's correlation coefficients (PCC, linear
-relationship) and Spearman's rank correlation coefficients (monotonic
-rela- tionship) after standardization of the FCM and sensor data sets
-(see Section 8 in supplementary information). The significance of the
-correlations was assessed by the computation of p-values at 95\%
-confidence level. The pair-wise coefficients were displayed in a heat
-map for efficient representation of the gradients in pos- itive and
-inverse correlations between parameters, and for rapid identification of
-the pre-dominant correlations. In this heat map, the parameters were
-reordered by hierarchical clustering using the Ward algorithm (see
-Section 8 in supplementary information). The additional R packages Vegan
-(Oksanen et al., 2009), Heatplus (Ploner, 2011), and Heatmap.plus (Day,
-2007) were used to these ends.
-\href{https://www.baselland.ch/politik-und-behorden/direktionen/bau-und-umweltschutzdirektion/umweltschutz-energie/wasser/wasserversorgung/publikationen/downloads/tp1-karstsysteme.pdf}{TP1
-Basellandschaft}
-\end{quote}
 
 \end{frame}
 
@@ -699,36 +640,6 @@ Dynamic time series visualisation with package
 
 \end{frame}
 
-\begin{frame}{Time series - Import and preparation}
-
-\begin{itemize}
-\tightlist
-\item
-  fill in missing values (interpolation)
-\item
-  regular time-step
-
-  \begin{itemize}
-  \tightlist
-  \item
-    smoothing
-  \item
-    decimate
-  \end{itemize}
-\end{itemize}
-
-\begin{quote}
-Online flow cytometry measurements were linearly interpolated and then
-sampled at equal time intervals (15-minutes) using the ``approx()''
-command of the statistical software R39. This was to adjust for minor
-deviations from the 15-minutes sampling interval in the original data
-set\ldots{}
-\end{quote}
-
-\href{https://www.nature.com/articles/srep38462}{Nature}
-
-\end{frame}
-
 \begin{frame}{Time series - Interpolation}
 
 \includegraphics[height=0.35000\textwidth]{imgPres/TS_1D_interp.png}
@@ -739,57 +650,35 @@ set\ldots{}
 
 \begin{frame}{Time series - statistics}
 
-\begin{itemize}
-\tightlist
-\item
-  Daily, monthly, yearly values (cf.~book: Analysis of ecological data
-  with R)
-\item
-  Auto-correlation function (ACF) and Cross-correlation function (CCF)
-  See ARIMA model
-  \href{https://www.analyticsvidhya.com/blog/2015/12/complete-tutorial-time-series-modeling/}{tutorial},
-  \href{http://a-little-book-of-r-for-time-series.readthedocs.io/en/latest/src/timeseries.html}{tutorial2}
-\item
-  empirical cumulative distribution function
-\end{itemize}
+\columnsbegin
+\column{.45\textwidth}
+
+\includegraphics{imgPres/ts_acf.png}
+\includegraphics{imgPres/ts_fourier.png} \column{.45\textwidth}
+
+\includegraphics{imgPres/ts_ccf.png}
+\includegraphics{imgPres/ts_boxplot_monthly.png}
+
+\columnsend
 
 \end{frame}
 
-\begin{frame}{Time series - spectral analysis}
+\begin{frame}{Time series - Regression and smoothing}
 
-\begin{itemize}
-\item
-  Fourier
-\item
-  SSA
-\item
-  ?
-\item
-  wavelet analysis
-\item
-  impulse response function: Check RRAWFLOW package:
-  \href{https://sd.water.usgs.gov/projects/RRAWFLOW/RRAWFLOW.html}{rrawflow
-  website}
-\item
-  Example: NF-Fisch Plot CP1 against CP2 and CP3: ellipses
-\item
-  CD-Experiment
-\item
-  \href{https://cran.r-project.org/web/packages/waterData/vignettes/vignette.pdf}{time-series
-  cleanup}
-\item
-  \href{http://www.css.cornell.edu/faculty/dgr2/teach/R/R_ts.pdf}{time-series}
-\end{itemize}
+Regression
 
-\end{frame}
+\includegraphics[width=0.55000\textwidth]{imgPres/ts_regression.png}
 
-\begin{frame}{Time series - regression}
+Moving average
 
-\begin{itemize}
-\tightlist
-\item
-  Regression
-\end{itemize}
+\includegraphics[width=0.55000\textwidth]{imgPres/ts_MA.png}
+
+Smoothing
+
+\includegraphics[width=0.55000\textwidth]{imgPres/ts_KS.png}
+
+source: book ``Time Series Analysis and Its Applications with R
+examples''
 
 \end{frame}
 
@@ -871,23 +760,6 @@ GMS}}
 \end{itemize}
 
 \columnsend
-
-\end{frame}
-
-\begin{frame}{CHECK: Time series - mining and clustering}
-
-\href{https://rdatamining.wordpress.com/2011/08/23/time-series-analysis-and-mining-with-r/}{Time
-series mining and clustering}
-
-\begin{itemize}
-\tightlist
-\item
-  Compute distance between time-series
-\item
-  Clustering
-\item
-  Vizualisation (e.g., MDS)
-\end{itemize}
 
 \end{frame}
 
@@ -993,13 +865,32 @@ is a GIS software} (sp, rgeos, raster, rgdal) see also \texttt{sf} :
 \textbf{Tool}
 
 \begin{itemize}
-\tightlist
 \item
   manipulation raster
+
+  \begin{itemize}
+  \tightlist
+  \item
+    raster interpolations
+  \item
+    multi-band raster
+  \item
+    slope, flow direction, hillshade
+  \item
+    \ldots{}
+  \end{itemize}
 \item
   manipulation feature
-\item
-  raster interpolation:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    attribute manipulations
+  \item
+    spatial operations
+  \item
+    geometric operations
+  \end{itemize}
 \end{itemize}
 
 \textbf{Still missing}
@@ -1009,24 +900,12 @@ is a GIS software} (sp, rgeos, raster, rgdal) see also \texttt{sf} :
 \item
   TIN
 \item
-  watershed but
-
-  \begin{itemize}
-  \tightlist
-  \item
-    check
-    \href{https://gis.stackexchange.com/questions/182120/get-rivers-from-a-dem-raster}{that}
-  \item
-    check
-    \href{https://gis.stackexchange.com/questions/84309/what-algorithm-is-used-by-arcgis-watershed-tool}{how
-    to compute flow accumulation}
-  \item
-    idea: use local structure tensor to compute direction and
-    accumulation\ldots{}.
-  \end{itemize}
-\item
-  download tiles webgis of Italy region
+  watershed
 \end{itemize}
+
+For an overview:
+\href{https://bookdown.org/robinlovelace/geocompr}{online book
+``geocomputation with R''}
 
 \columnsend
 
@@ -1053,7 +932,24 @@ make a 4-4 pictures !! \includegraphics{imgPres/R_GIS01.png}
 
 \begin{frame}{R GIS - 3D raster visualisation}
 
-TODO
+\includegraphics{imgPres/GIS_rasterVis.png}
+
+\end{frame}
+
+\begin{frame}[fragile]{R GIS - LiDAR \& bathymetry}
+
+\href{https://cran.r-project.org/web/packages/lidR/index.htm}{lidR}: a R
+package for airborne LiDAR data manipulation and visualisation for
+forestry application
+(\href{https://github.com/Jean-Romain/lidR}{companion website})
+
+\includegraphics[width=0.50000\textwidth]{imgPres/GIS_lidar.png}
+
+\href{https://cran.r-project.org/web/packages/marmap/index.htm}{\texttt{marmap}}:
+a R package for making and analysing bathymetric
+(\href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3760912/}{article})
+
+\includegraphics[width=0.50000\textwidth]{imgPres/GIS_bathy.png}
 
 \end{frame}
 
@@ -1094,20 +990,6 @@ See also:
 
 \end{frame}
 
-\begin{frame}{R GIS - LiDAR}
-
-R package for airborne LiDAR data manipulation and visualisation for
-forestry application \href{https://github.com/Jean-Romain/lidR}{lidR}
-
-\end{frame}
-
-\begin{frame}{R GIS - making and using bathymetric maps in R with
-\texttt{marmap} pakage}
-
-\href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3760912/}{link}
-
-\end{frame}
-
 \begin{frame}[fragile]{Image analysis and processing - resources}
 
 \begin{itemize}
@@ -1136,6 +1018,9 @@ forestry application \href{https://github.com/Jean-Romain/lidR}{lidR}
   \item
     \href{https://www.bioconductor.org/packages/3.7/bioc/vignettes/EBImage/inst/doc/EBImage-introduction.html}{check
     \texttt{EBImage} vignettes}
+  \item
+    {[}Online presentation of \texttt{EBImage}{]}
+    vignettes{]}(\url{https://www.bioconductor.org/help/course-materials/2015/BioC2015/BioC2015Oles.html})
   \end{itemize}
 \end{itemize}
 
@@ -1164,26 +1049,6 @@ Example: \texttt{imager} package
 
 \end{frame}
 
-\begin{frame}{Seismic data}
-
-\begin{itemize}
-\tightlist
-\item
-  \href{http://mazamascience.com/Classes/IRIS_2015/}{seimic data
-  analysis and processing}
-\item
-  \href{https://www.earth-surf-dynam-discuss.net/esurf-2017-75/esurf-2017-75.pdf}{eisis
-  package}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \href{http://www.unc.edu/~leesj/FETCH/GRAB/Vignettes/whyRbeam.pdf}{talk}
-  \end{itemize}
-\end{itemize}
-
-\end{frame}
-
 \begin{frame}{Database}
 
 \begin{itemize}
@@ -1206,46 +1071,85 @@ Example: \texttt{imager} package
 
 \end{frame}
 
-\begin{frame}[fragile]{Misc}
+\section{Modeling/simulations}\label{modelingsimulations}
 
-\begin{itemize}
-\tightlist
-\item
-  Package
-  \href{https://cran.r-project.org/web/packages/rioja/}{\texttt{rioja}}:
-  Functions for the analysis of Quaternary science data, including
-  constrained clustering, WA, WAPLS, IKFA, MLRC and MAT transfer
-  functions, and stratigraphic diagrams.
-\end{itemize}
+\begin{frame}{Statistical/stochastic models - Probability models}
+
+\includegraphics[width=0.60000\textwidth]{imgPres/distribution_chart.png}
+
+Bayesian modelling, MCMC, etc.
+
+see \href{https://cran.r-project.org/web/views/Distributions.html}{CRAN
+Task View: Probability Distributions}
 
 \end{frame}
 
-\section{Modeling/simulations}\label{modelingsimulations}
+\begin{frame}[fragile]{Statistical/stochastic models - Gaussian random
+fields}
 
-\begin{frame}[fragile]{Statistical/stochastic models}
+package
+\href{https://cran.r-project.org/web/packages/RandomFields/index.html}{\texttt{RandomFields}}
 
-\begin{itemize}
-\tightlist
-\item
-  probabilty distribution
-\item
-  Gaussian process/Kriging (\texttt{RandomFields}): account for
-  correlation
+\columnsbegin
+\column{.45\textwidth}
 
-  \begin{itemize}
-  \tightlist
-  \item
-    3D subsurface heterogeneity model
-  \end{itemize}
-\item
-  point process and marked point process
+\includegraphics[width=0.80000\textwidth]{imgPres/randomfield1.png}
 
-  \begin{itemize}
-  \tightlist
-  \item
-    faults, \texttt{CBRDM}
-  \end{itemize}
-\end{itemize}
+\includegraphics[width=0.80000\textwidth]{imgPres/randomfield2.png}
+
+\column{.45\textwidth}
+
+\includegraphics[width=0.80000\textwidth]{imgPres/randomfield3.png}
+
+\includegraphics[width=0.80000\textwidth]{imgPres/randomfield4.png}
+
+\columnsend
+
+\end{frame}
+
+\begin{frame}[fragile]{Statistical/stochastic models - Point processes}
+
+see
+\href{https://cran.r-project.org/web/packages/spatstat/index.html}{\texttt{spatstat}}
+
+\columnsbegin
+\column{.45\textwidth}
+
+\includegraphics{imgPres/mpp_01.png}
+
+\includegraphics{imgPres/mpp_02.png} \column{.45\textwidth}
+
+\includegraphics{imgPres/mpp_03.png}
+
+\includegraphics{imgPres/mpp_05.png}
+
+\columnsend
+
+\end{frame}
+
+\begin{frame}{Coarse, braided river deposit model}
+
+\columnsbegin
+
+\column{.45\textwidth}
+\includegraphics{imgPres/06_highAg_section_light.png}
+
+\column{.45\textwidth} \includegraphics{imgPres/06_lowAg_section.png}
+\columnsend
+
+\columnsbegin
+
+\column{.45\textwidth}
+
+\includegraphics{imgPres/07_highAg_HK_light.png}
+
+\column{.45\textwidth}
+
+\includegraphics{imgPres/07_lowAg_HK_light.png}
+
+\columnsend
+
+\href{https://github.com/emanuelhuber/CBRDM}{code and tutorial online}
 
 \end{frame}
 
@@ -1255,8 +1159,15 @@ Example: \texttt{imager} package
 \tightlist
 \item
   \texttt{RRAWFLOW}: Rainfall-Response Aquifer and Watershed Flow Model
+  \href{https://sd.water.usgs.gov/projects/RRAWFLOW/RRAWFLOW.html}{rrawflow
+  website}
 \item
   \texttt{topmodel} and \texttt{dynatopmodel} packages
+\item
+  \href{https://cran.r-project.org/package=ambhasGW}{package
+  \texttt{ambhasGW}} simulates groundwater fluctuations in response to
+  precipitation and pumping:
+  \href{www.mdpi.com/2071-1050/10/1/26/pdf}{Sekhar et al. (2017)}
 \end{itemize}
 
 \end{frame}
@@ -1285,11 +1196,6 @@ website}
 
 \begin{frame}{physically based lumped model}
 
-simulate groundwater fluctuations in response to precipitation and
-pumping: \href{https://cran.r-project.org/package=ambhasGW}{package
-ambhasGW} \href{www.mdpi.com/2071-1050/10/1/26/pdf}{Sekhar et al.
-(2017)}
-
 \end{frame}
 
 \begin{frame}[fragile]{Groundwater head interpolation}
@@ -1306,35 +1212,43 @@ Igusquiza (2010)}
 
 \begin{frame}{Modflow - US-GS reproducible report}
 
+\textbf{Groundwater-flow model for the Wood River Valley aquifer system,
+south-central Idaho}
+
+Use R for GIS operation to set up a groundwater model (MODFLOW).
+
+\includegraphics[width=0.70000\textwidth]{imgPres/wvrModel.png}
+
 \href{https://github.com/USGS-R/wrv}{github.com/USGS-R/wrv}
 
 \end{frame}
 
-\begin{frame}{Modflow - subsurface flow mixing (1)}
+\begin{frame}{Modflow/modpath - subsurface flow mixing (1)}
 
-personal code based
+personal code based on
 \href{https://github.com/USGS-R/wrv}{github.com/USGS-R/wrv}
 \includegraphics{imgPres/RMODFLOW_head.png}
 
 \end{frame}
 
-\begin{frame}{Modflow - subsurface flow mixing (2)}
+\begin{frame}{Modflow/modpath - subsurface flow mixing (2)}
 
 \includegraphics{imgPres/RMODFLOW_particles.png}
 
 \end{frame}
 
-\begin{frame}{Modflow - subsurface flow mixing (3)}
+\begin{frame}{Modflow/modpath - subsurface flow mixing (3)}
 
 \includegraphics{imgPres/RMODFLOW_zoom.png}
 
 \end{frame}
 
-\begin{frame}[fragile]{Modflow -stochastic simulation (1)}
+\begin{frame}[fragile]{Modflow/modpath -stochastic simulation (1)}
 
 (\texttt{gwModBac} personal code based on
-\href{https://github.com/USGS-R/wrv}{github.com/USGS-R/wrv} Groundwater
-flow simulation and particle tracking to forecast microbial
+\href{https://github.com/USGS-R/wrv}{github.com/USGS-R/wrv}
+
+Groundwater flow simulation and particle tracking to forecast microbial
 concentration in a drinking water extraction well.
 
 \begin{block}{Workflow}
@@ -1377,52 +1291,56 @@ Other applications:
 
 \end{frame}
 
-\begin{frame}{OpenFOAM - Stochastic simulation}
-
-\end{frame}
-
 \section{Reporting}\label{reporting}
 
 \begin{frame}[fragile]{Ressources - reporting}
 
-Two philosophies: * \texttt{ggplot} and \texttt{ggplot2} and theirs
-cousins * or base \texttt{graphics}, \texttt{plot3D}, etc.
+Two philosophies:
 
-3D plots: * \texttt{rgl} for 3D interactive plots (based on OpenGL) *
-\texttt{rasterVis} for 3D interactive plots of raster (based on OpenGL)
-* \texttt{plot3D} for 3D static plots
+\begin{itemize}
+\tightlist
+\item
+  \texttt{ggplot} and \texttt{ggplot2} and theirs cousins
+\item
+  or base \texttt{graphics}, \texttt{plot3D}, etc.
+\end{itemize}
+
+3D plots:
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{rgl} for 3D interactive plots (based on OpenGL)
+\item
+  \texttt{rasterVis} for 3D interactive plots of raster (based on
+  OpenGL)
+\item
+  \texttt{plot3D} for 3D static plots
+\end{itemize}
 
 \end{frame}
 
-\begin{frame}[fragile]{publication-quality figures (see also package
+\begin{frame}{publication-quality figures (see also package
 \texttt{ggplot2})}
 
 See R-graph gallery
 
 \columnsbegin
-\column{.6\textwidth} \#\#\# large graphics choice
+\column{.6\textwidth}
+
+large graphics choice
 
 \begin{itemize}
+\tightlist
 \item
   2D and 3D plots
 \item
   static and interactive plots
-\item
-  3D interactive plots with \texttt{rgl} (based on OpenGL)
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(rgl)}
-\KeywordTok{demo}\NormalTok{(abundance) }
-\end{Highlighting}
-\end{Shaded}
-
-  \includegraphics[width=0.60000\textwidth]{imgPres/rgl_demo.png}
 \end{itemize}
 
 \column{.4\textwidth}
 
-\begin{block}{Export}
+Export
 
 \begin{itemize}
 \tightlist
@@ -1440,8 +1358,6 @@ See R-graph gallery
 
 \columnsend
 
-\end{block}
-
 \end{frame}
 
 \begin{frame}[fragile]{Report, presentation, book}
@@ -1451,15 +1367,17 @@ See R-graph gallery
 Report/presentation/book: HTML/PDF (packages \texttt{RMarkdown} and
 \texttt{knitr})
 
+\includegraphics[width=0.40000\textwidth]{imgPres/report_markdownchunk.png}
+
+\includegraphics[width=0.40000\textwidth]{imgPres/report_rmarkdownoutputformats.png}
+
 \end{frame}
 
 \begin{frame}[fragile]{Web applications}
 
-\begin{itemize}
-\tightlist
-\item
-  interactive web apps (package \texttt{shiny})
-\end{itemize}
+interactive web apps (package \texttt{shiny})
+
+\includegraphics{imgPres/report_movie-explorer.png}
 
 \end{frame}
 
@@ -1471,17 +1389,6 @@ Report/presentation/book: HTML/PDF (packages \texttt{RMarkdown} and
   combine several codes in a package
 \item
   include data in the package
-\end{itemize}
-
-\end{frame}
-
-\begin{frame}[fragile]{Interactive R teaching modules}
-
-\begin{itemize}
-\tightlist
-\item
-  R can create interactive teaching modules: You can do it in the
-  console with \texttt{swirl} or on the web with \texttt{Datamind}.
 \end{itemize}
 
 \end{frame}

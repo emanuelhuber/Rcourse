@@ -1,0 +1,10 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Introduction}{4}{0}{1}
+\beamer@sectionintoc {2}{Potential use of R for AUG group}{8}{0}{2}
+\beamer@sectionintoc {3}{Data import/export}{10}{0}{3}
+\beamer@sectionintoc {4}{Data preparation}{13}{0}{4}
+\beamer@sectionintoc {5}{Data analysis and processing}{19}{0}{5}
+\beamer@sectionintoc {6}{Modeling/simulations}{55}{0}{6}
+\beamer@sectionintoc {7}{Reporting}{70}{0}{7}
+\beamer@sectionintoc {8}{Tools}{77}{0}{8}
+\beamer@sectionintoc {9}{What's next?}{81}{0}{9}
